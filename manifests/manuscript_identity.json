@@ -1,12 +1,24 @@
 {
   "manuscript": {
-    "sha256": "a15e22f04d9e4d0c61eab3c374fa1313637bcf2761e50b3b20cbbc0c35bc87ab",
-    "revision_date": "2026-11-04",
+    "sha256": "471b8f130b2905af49e9dcf96138c22b14366a39e92cbcf1cda45669802d9f63",
+    "revision_date": "2026-11-06",
     "distributed_in_repository": false
   },
   "supporting_information": {
-    "sha256": "2a09c05d8d4c13676b4ddfc39bede1dcb59dab3d3a69958771235ec8f1f6dca3",
-    "revision_date": "2026-11-04",
+    "sha256": "24c16fe2acc3bd32e121fed3f5b0b5720944fa7cbb9c4ad7522ea97d11fbd6ce",
+    "revision_date": "2026-11-06",
     "distributed_in_repository": false
+  },
+  "previous_document_identity": {
+    "manuscript": {
+      "sha256": "a15e22f04d9e4d0c61eab3c374fa1313637bcf2761e50b3b20cbbc0c35bc87ab",
+      "revision_date": "2026-11-04",
+      "distributed_in_repository": false
+    },
+    "supporting_information": {
+      "sha256": "2a09c05d8d4c13676b4ddfc39bede1dcb59dab3d3a69958771235ec8f1f6dca3",
+      "revision_date": "2026-11-04",
+      "distributed_in_repository": false
+    }
   }
 }

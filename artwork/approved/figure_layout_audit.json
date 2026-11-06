@@ -260,6 +260,15 @@
       ],
       "matching_basis": "Exact four retained v6 module-color-ramp panels visually matched against current Figure2b; same reaction layout, original titles, legends and condition bars. Night source SVG explicitly retains Night glycogen use and glycogen reverse arm 0.012.",
       "note": "Enlarged presentation of existing Figure2b artwork, not a newly calculated model result. All original labels retained; no scientific annotation or numerical value edited."
+    },
+    {
+      "figure": 3,
+      "operation": "Reader-facing model-name update",
+      "input_sha256": "d3189327464b22986b97d5b90b13f8a05ce318a57d725565c7637c21cd243491",
+      "output_sha256": "5d50930f73207d93761e7f399e9798d5bfab0afca361c665e4dcac277d9b03b4",
+      "scientific_coordinates_changed": false,
+      "label_audit": "artwork/approved/Figure3_label_audit.json"
     }
-  ]
+  ],
+  "current_figure3_sha256": "5d50930f73207d93761e7f399e9798d5bfab0afca361c665e4dcac277d9b03b4"
 }

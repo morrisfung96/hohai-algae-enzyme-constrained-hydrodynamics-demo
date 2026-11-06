@@ -6,7 +6,7 @@ release. The archived input and result identities are retained throughout.
 | Layer | Included material | Verification |
 | --- | --- | --- |
 | Metabolic response | 7,555 computed rows, lookup implementation, units, diagnostics | Original-class numerical query regression; one separately documented strict constraint exception |
-| Ecological arithmetic | Adopted production projection, full per-grid R18 update, configuration | Retained 16-hour day/night driver regression with zero numerical difference |
+| Ecological arithmetic | Adopted production projection, full per-grid metabolic-capacity ecological update, configuration | Retained 16-hour day/night driver regression with zero numerical difference |
 | Ecological trajectory | Four complete frozen ecological-state bundles | Source checksums preserved; no new ecological simulation or selection |
 | Toxin source, inventories and offline exchange | Portable numerical code, full annual geometry/velocities and retained initial pools | Four years × three variants, complete archived windows, zero numerical difference from retained reference outputs |
 | Observation evaluation | Frozen 164-MC, 64-surface-biomass and 181-biomass tables, coefficients and metrics code | Strict common-sample identity and archived metric checks |

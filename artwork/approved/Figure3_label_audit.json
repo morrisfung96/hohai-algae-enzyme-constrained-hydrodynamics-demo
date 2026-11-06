@@ -1,0 +1,244 @@
+{
+  "purpose": "Reader-facing model terminology cleanup only; no model rerun or numerical change.",
+  "source_sha256": "d3189327464b22986b97d5b90b13f8a05ce318a57d725565c7637c21cd243491",
+  "png": "docs\\manuscript_naming_update_20261106\\figures\\Figure3_biomass_capacity_comparison.png",
+  "png_sha256": "5d50930f73207d93761e7f399e9798d5bfab0afca361c665e4dcac277d9b03b4",
+  "svg": "docs\\manuscript_naming_update_20261106\\figures\\Figure3_biomass_capacity_comparison.svg",
+  "svg_sha256": "e2eafb70fc275b09a918b112dcd605cbed59c1aa08ca124d7c7e551ee91dbb28",
+  "pdf": "docs\\manuscript_naming_update_20261106\\figures\\Figure3_biomass_capacity_comparison.pdf",
+  "pdf_sha256": "00614495ecb1275b27e8312b1bcec068b76dcd0de86ae35c844cd1579dfbda47",
+  "label_free_base": "docs\\manuscript_naming_update_20261106\\figures\\Figure3_biomass_capacity_comparison_label_free_base.png",
+  "label_free_base_sha256": "69a3007321718b21fc09b4e362c6a99d8c3789ca6d69394fbf90b112cdb20d6c",
+  "pixels": [
+    4500,
+    4320
+  ],
+  "dpi": 600,
+  "labels": [
+    {
+      "id": "a_metabolic",
+      "old": "R18",
+      "new": "Metabolic capacity",
+      "x": 3982,
+      "y": 479,
+      "size": 42,
+      "bold": false,
+      "fill": "#007F78",
+      "rendered_bounds": [
+        3982,
+        449,
+        4325,
+        487
+      ]
+    },
+    {
+      "id": "a_empirical",
+      "old": "R18E",
+      "new": "Empirical capacity",
+      "x": 3982,
+      "y": 533,
+      "size": 42,
+      "bold": false,
+      "fill": "#D55E00",
+      "rendered_bounds": [
+        3982,
+        503,
+        4318,
+        541
+      ]
+    },
+    {
+      "id": "b_title",
+      "old": "Station-level biomass trajectories \u00b7 observed versus R18 \u00b7 all 181 rows",
+      "new": "Station-level biomass trajectories \u00b7 all 181 rows",
+      "x": 369,
+      "y": 1104,
+      "size": 60,
+      "bold": true,
+      "fill": "#23343B",
+      "rendered_bounds": [
+        369,
+        1060,
+        1719,
+        1117
+      ]
+    },
+    {
+      "id": "b_observed",
+      "old": "Observed",
+      "new": "Observed",
+      "x": 2995,
+      "y": 1118,
+      "size": 42,
+      "bold": false,
+      "fill": "#23343B",
+      "rendered_bounds": [
+        2995,
+        1088,
+        3176,
+        1118
+      ]
+    },
+    {
+      "id": "b_metabolic",
+      "old": "R18",
+      "new": "Metabolic capacity",
+      "x": 3300,
+      "y": 1118,
+      "size": 42,
+      "bold": false,
+      "fill": "#23343B",
+      "rendered_bounds": [
+        3300,
+        1088,
+        3643,
+        1126
+      ]
+    },
+    {
+      "id": "b_holdout",
+      "old": "2019 conditional holdout",
+      "new": "2019 conditional holdout",
+      "x": 3768,
+      "y": 1118,
+      "size": 42,
+      "bold": false,
+      "fill": "#23343B",
+      "rendered_bounds": [
+        3768,
+        1088,
+        4218,
+        1118
+      ]
+    },
+    {
+      "id": "c_y_axis",
+      "old": "R18 \u0394log\u2081\u2080 biomass",
+      "new": "Metabolic-capacity \u0394log\u2081\u2080 biomass",
+      "x": 201,
+      "y": 3258,
+      "size": 43,
+      "bold": false,
+      "fill": "#23343B",
+      "rotation": 90,
+      "font": "DejaVu Sans",
+      "rendered_bounds": [
+        180,
+        2890,
+        222,
+        3627
+      ]
+    },
+    {
+      "id": "d_x_axis",
+      "old": "Per-row \u0394|log\u2081\u2080 error| (regulation off \u2212 full R18)",
+      "new": "Per-row \u0394|log\u2081\u2080 error| (regulation off \u2212 full model)",
+      "x": 2242,
+      "y": 4114,
+      "size": 40,
+      "bold": false,
+      "fill": "#23343B",
+      "anchor": "middle",
+      "font": "DejaVu Sans",
+      "rendered_bounds": [
+        1746,
+        4084,
+        2737,
+        4124
+      ]
+    }
+  ],
+  "declared_label_rectangles": {
+    "a_direct_labels": [
+      3980,
+      438,
+      4345,
+      545
+    ],
+    "b_title_and_legend": [
+      365,
+      1040,
+      4445,
+      1150
+    ],
+    "c_y_axis_title": [
+      170,
+      2820,
+      235,
+      3695
+    ],
+    "d_x_axis_title": [
+      1680,
+      4068,
+      2860,
+      4135
+    ]
+  },
+  "legend_marks": [
+    {
+      "name": "Observed",
+      "source": [
+        3349,
+        1080,
+        3414,
+        1125
+      ],
+      "destination": [
+        2920,
+        1080
+      ]
+    },
+    {
+      "name": "Metabolic capacity",
+      "source": [
+        3630,
+        1080,
+        3695,
+        1125
+      ],
+      "destination": [
+        3225,
+        1080
+      ]
+    },
+    {
+      "name": "2019 conditional holdout",
+      "source": [
+        3808,
+        1080,
+        3869,
+        1125
+      ],
+      "destination": [
+        3695,
+        1080
+      ]
+    }
+  ],
+  "changed_pixels": 115936,
+  "changed_pixels_outside_declared_label_rectangles": 0,
+  "all_pixels_outside_declared_label_rectangles_equal": true,
+  "all_legend_symbol_pixels_preserved_at_native_scale": true,
+  "current_depth_retention_panel_e_exact_pixel_equality": true,
+  "pdf_replacement_text_contains_no_internal_model_numbers": true,
+  "preserved": [
+    "numerical coordinates",
+    "all data marks and error bars",
+    "all four-sided plot frames",
+    "colors",
+    "sample counts",
+    "metric values",
+    "current approved depth-retention panel e"
+  ],
+  "not_reused": "Historical native SVG panel e is an obsolete result and was not reused.",
+  "rectangle_convention": "[x0,y0,x1,y1), in original 4500 x 4320 raster pixels",
+  "visual_quality_assurance": {
+    "png_full_figure_inspected": true,
+    "png_all_four_label_crops_inspected": true,
+    "pdf_native_label_crops_rendered_and_inspected": true,
+    "svg_editable_label_crops_rendered_and_inspected": true,
+    "unicode_log_subscripts_display_correctly": true,
+    "complete_d_axis_parenthesis_and_no_clipping": true,
+    "no_visible_internal_model_identifiers": true
+  }
+}

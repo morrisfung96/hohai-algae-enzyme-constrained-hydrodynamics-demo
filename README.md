@@ -5,7 +5,7 @@ Inventories to Algal Biomass and Microcystin Distributions in Lake Erie**.
 It connects archived environment-dependent metabolic capacities to lake-scale
 ecology, offline hydrodynamic exchange, toxin inventories, and surface observations.
 
-This first release provides reusable ecological arithmetic, a four-year
+This repository provides reusable ecological arithmetic, a four-year
 **frozen-ecological-state replay**, and paper-result reproduction. The frozen
 replay has been compared over all four years and three source variants against
 79,296 station-hour records, 3,336 station days, and 9,900 mass-ledger steps;
@@ -65,6 +65,17 @@ Available source variants are `dynamic`, `fixed`, and `proportional`. Omit
 `--max-hours` for the complete archived window. The yearly archives contain the
 complete numerical inputs and reference outputs; example fixtures are additional
 unit-regression assets and do not replace the full archives.
+
+## Reader-facing model names
+
+The biomass comparison uses **Metabolic capacity** and **Empirical capacity**
+in the article and Figure 3. Historical identifiers remain in original data
+columns, configuration keys, and provenance records. The depth-retention surface
+expression is a separate observation setting. See `docs/model_names.md`.
+
+Release v0.1.1 updates these names and Figure 3 labels. Its numerical code,
+frozen data, configurations, and four yearly input archives are unchanged from
+v0.1.0. Download the same annual archives using `manifests/external_inputs.json`.
 
 ## Data and model identity
 

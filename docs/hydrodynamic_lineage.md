@@ -3,7 +3,7 @@
 ## Frozen project identity
 
 The formal research line remains the Delft3D/lake-scale environmental
-ecological--metabolic--hydrodynamic coupled simulation.  OE1, R18, all
+ecological--metabolic--hydrodynamic coupled simulation.  The conservative ecological core, all
 ecological parameters, the decline gate, and the held-out 2019 validation year
 remain frozen.
 
@@ -25,7 +25,7 @@ continuity has passed.
    generate the archived files.
 
 Identity 2 does not imply identity 3.  Consequently the project must not claim
-that R18 itself is an FVCOM 4.3 model, or that compiling the public FVCOM 4.3
+that the metabolic-capacity ecological model itself is an FVCOM 4.3 model, or that compiling the public FVCOM 4.3
 tree reproduces the historical hydrodynamics.
 
 ## Status of work already completed

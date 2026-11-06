@@ -113,10 +113,10 @@
   },
   {
     "path": "artwork/approved/Figure3.png",
-    "bytes": 1369060,
-    "sha256": "d3189327464b22986b97d5b90b13f8a05ce318a57d725565c7637c21cd243491",
+    "bytes": 1453523,
+    "sha256": "5d50930f73207d93761e7f399e9798d5bfab0afca361c665e4dcac277d9b03b4",
     "source_sha256": "d3189327464b22986b97d5b90b13f8a05ce318a57d725565c7637c21cd243491",
-    "transform": "byte-for-byte copy",
+    "transform": "Reader-facing labels updated; all pixels outside audited text bands retained",
     "role": "figure_asset"
   },
   {

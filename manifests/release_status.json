@@ -21,5 +21,11 @@
   "FACHB905_network_distributed": false,
   "historical_native_water_flux_recovery": "NOT_CLAIMED",
   "repository_url": "https://github.com/morrisfung96/hohai-algae-enzyme-constrained-hydrodynamics-demo",
-  "release_tag": "v0.1.0"
+  "release_tag": "v0.1.1",
+  "numerical_baseline_release": "v0.1.0",
+  "reader_name_update": {
+    "numerical_code_config_data_changed": false,
+    "new_model_run": false,
+    "new_fit": false
+  }
 }
