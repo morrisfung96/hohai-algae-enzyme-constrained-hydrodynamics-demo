@@ -2,6 +2,11 @@
   "scope": "Verified frozen-state demo artifact inventory",
   "files": [
     {
+      "path": ".gitattributes",
+      "bytes": 84,
+      "sha256": "eb986e9bbc68560391fa85d399ed140537b07a1b88ad39fa92e682761b69dd87"
+    },
+    {
       "path": ".github/workflows/reproduce.yml",
       "bytes": 703,
       "sha256": "a7203e0c4cf2c19a176f7c62045fbf6873d050885351c329a844f2dac44c845a"
