@@ -1,0 +1,81 @@
+{
+  "files": [
+    {
+      "file": "metabolic_period_overview.csv",
+      "sha256": "914553a13178d32a5cc551db14a7751cd1f37142baad3633b206378e6e997289",
+      "bytes": 2064,
+      "rows": 5,
+      "columns": [
+        "scenario",
+        "nearest_window_id",
+        "nearest_datetime_local",
+        "nearest_temp_C",
+        "light_Wm2",
+        "DIN_mgN_L",
+        "DIP_mgP_L",
+        "max_biomass_mu_h",
+        "fixed_biomass_mu_h",
+        "max_toxin_at_fixed_biomass",
+        "pfba_light_uptake_abs",
+        "pfba_nitrate_uptake_abs",
+        "pfba_pi_uptake_abs",
+        "growth_relative_to_typical",
+        "toxin_relative_to_typical",
+        "toxin_to_committed_growth",
+        "light_bound_usage_fraction",
+        "nitrate_bound_usage_fraction",
+        "phosphate_bound_usage_fraction"
+      ],
+      "local_path_scan": "PASS; no drive-qualified paths or email addresses",
+      "source_basename": "metabolic_period_overview.csv",
+      "source_release_role": "Archived representative-period calculation summary; not a regenerated response."
+    },
+    {
+      "file": "metabolic_selected_pathways.csv",
+      "sha256": "a9cae313e70fe160f10ff3a2ec0b5dd4cbc57476c70ee69df2273ed4f465bd60",
+      "bytes": 4420,
+      "rows": 40,
+      "columns": [
+        "scenario",
+        "nearest_datetime_local",
+        "pathway",
+        "group",
+        "edge_id",
+        "absolute_flux",
+        "relative_to_typical"
+      ],
+      "local_path_scan": "PASS; no drive-qualified paths or email addresses",
+      "source_basename": "metabolic_selected_pathways.csv",
+      "source_release_role": "Archived representative-period calculation summary; not a regenerated response."
+    },
+    {
+      "file": "metabolic_severe_light_diagnostic.csv",
+      "sha256": "5fddd6a226c960e2a57b7add450c4045fd0589cd073a3994afea795a482fc958",
+      "bytes": 916,
+      "rows": 4,
+      "columns": [
+        "scenario",
+        "condition_class",
+        "nearest_datetime_local",
+        "light_Wm2",
+        "DIN_mgN_L",
+        "fixed_biomass_mu_h",
+        "max_toxin_at_fixed_biomass",
+        "growth_relative_to_typical",
+        "toxin_relative_to_typical",
+        "toxin_to_committed_growth"
+      ],
+      "local_path_scan": "PASS; no drive-qualified paths or email addresses",
+      "source_basename": "metabolic_severe_light_diagnostic.csv",
+      "source_release_role": "Archived representative-period calculation summary; not a regenerated response."
+    }
+  ],
+  "upstream_model_included": false,
+  "new_lp_runs": 0,
+  "notes": [
+    "Representative-period calculations use rho=0.9 and are distinct from the dynamically committed formal lake response queries.",
+    "Low-N-daylight DIN=0.007305 mg N/L lies below the minimum DIN of the formal response table; it is a retained direct-solver diagnostic, not evidence of response-table coverage.",
+    "Severe-light rows are explicitly marked diagnostic_constraint_challenge and are not new lake observations.",
+    "Computed pathway summaries do not contain the source network, stoichiometric matrix, GPR or enzyme-parameter tables."
+  ]
+}

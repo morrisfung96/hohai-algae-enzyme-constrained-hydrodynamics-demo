@@ -1,0 +1,39 @@
+{
+  "status": "ARCHIVED_SOURCE_CONSTRAINT_EXCEPTION",
+  "source_file": "metabolic_response.csv.gz",
+  "source_sha256": "c68f04181b4825ce6dae1781d5c7b88e426d2945f1566fdd50468ede1942178d",
+  "rows": 7555,
+  "raw_residual_tolerance": 1e-10,
+  "rows_with_residual_within_tolerance": 7554,
+  "original_support_audit_threshold_raw": 2e-6,
+  "original_support_audit_threshold_source": "audit_V16_3_2022_surface_completion_biomass_replay.py:75",
+  "actual_solver_feasibility_tolerance": "UNKNOWN; not recorded in the retained producer or manifest",
+  "producer_lineage": "The same numerical exception is present in the retained joint sidecar from adaptive_enrichment_round_3_direct_LP; the public packaging did not introduce it.",
+  "retained_2022_cache_matches": {
+    "cache_rows": 88191,
+    "neighborhood_grids": 123,
+    "exception_matches": 0,
+    "scope": "Retained 2022 R0 official station-neighborhood context only; no conclusion about full-lake or other-year use."
+  },
+  "exception_rows": [
+    {
+      "env_id": "ENR3000089_24p9357_1p55_0p358134_0p00287857",
+      "temp_C": 24.935714285714283,
+      "light_Wm2": 1.55,
+      "DIN_mgN_L": 0.3581342857142857,
+      "DIP_mgP_L": 0.0028785714285714,
+      "rho_growth_commitment": 0.1,
+      "mu_max_h": 0.0046059200288028,
+      "mu_committed_h": -1.2546675531204325e-17,
+      "toxin_capacity_upper_per_gDW_h": 0.0044159544159544,
+      "growth_constraint_target_raw": 4.605920028802828e-7,
+      "biomass_flux_toxin_solution_raw": -1.2546675531204324e-20,
+      "growth_constraint_residual_raw": -4.6059200288029533e-7,
+      "growth_constraint_mode": "equality",
+      "toxin_solution_status": "optimal"
+    }
+  ],
+  "interpretation": "The producer reports an optimal equality-constrained solve but one retained row does not numerically satisfy that equality. It passed the original absolute 2e-6 raw audit threshold, but the relative deviation from this small target is approximately 100 percent. Without the historical solver feasibility configuration, its precise numerical cause remains UNKNOWN. The release preserves the formal source bytes and query arithmetic; it does not assert that this row is scientifically corrected. The strict release scientific gate remains FAIL.",
+  "changes_to_formal_response": 0,
+  "new_lp_runs": 0
+}

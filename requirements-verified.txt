@@ -1,0 +1,5 @@
+# Versions used for the local release validation. No upstream LP solver needed.
+numpy==2.3.5
+pandas==3.0.1
+scipy==1.15.3
+tzdata==2026.5

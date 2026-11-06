@@ -1,0 +1,23 @@
+{
+  "naming_policy": "Original archive names remain in frozen source tables for traceability. Readers should use the labels below; RevB is an archive identifier, not a distinct biological model.",
+  "mc_prediction_models": {
+    "Dynamic RevB": {"label": "Dynamic metabolic capacity with depth-retention surface expression", "mapping": "LOYO OLS", "formal_prediction_column": "Dynamic_RevB_loyo_prediction_ugL", "process_column": "Dynamic_RevB_process_ugL"},
+    "Fixed capacity RevB": {"label": "Fixed-capacity toxin source with depth-retention surface expression", "mapping": "LOYO OLS", "formal_prediction_column": "Fixed_capacity_RevB_loyo_prediction_ugL", "process_column": "Fixed_capacity_RevB_process_ugL"},
+    "Biomass source RevB": {"label": "Biomass-proportional toxin source with depth-retention surface expression", "mapping": "LOYO OLS", "formal_prediction_column": "Biomass_source_RevB_loyo_prediction_ugL", "process_column": "Biomass_source_RevB_process_ugL"},
+    "Dynamic q80 RevB": {"label": "Dynamic metabolic capacity with depth-retention surface expression", "mapping": "LOYO quantile 0.80", "formal_prediction_column": "Dynamic RevB_refit_q80_prediction_ugL"},
+    "Model biomass": {"label": "Regression on model biomass", "mapping": "LOYO baseline"},
+    "Model biomass and composition": {"label": "Regression on model biomass and composition", "mapping": "LOYO baseline"},
+    "Training median": {"label": "Training-year median", "mapping": "LOYO baseline"}
+  },
+  "phase_names": {"I": "Live-cell intracellular MC-LR process inventory", "P": "Dead-algal particulate MC-LR process inventory", "D": "Dissolved MC-LR process inventory"},
+  "biomass_models": {
+    "OE1": "Frozen conservative ecological core",
+    "R18_surface_x145": "Metabolic-capacity model, fixed x1.45 surface observation scale",
+    "R18E_surface_x145": "Empirical-capacity comparator, fixed x1.45 surface observation scale",
+    "aggregation_offswitch_biomass_gDW_m3": "2022 common-sample surface enrichment off",
+    "shallow_retention_max3_biomass_gDW_m3": "2022 common-sample adopted depth-retention surface expression"
+  },
+  "risk_model": {"name": "Frozen two-stage risk and conditional-tail branch", "source_identifier": "fpr10", "status": "Separate sensitivity/risk analysis; does not replace the formal OLS concentration evaluation", "selection": "Archived nested LOYO selection records; no parameters are selected by the release evaluation command"},
+  "historical_columns": {"*_fixed_archived_prediction_ugL": "Historical fixed mapping applied to the current surface-expression input. Retained for archive identity; excluded from the seven-model main evaluation outputs.", "refit_ols": "Archive identifier: coefficients were fitted previously. The release only applies the frozen coefficients.", "refit_q80": "Archive identifier: q0.80 coefficients were fitted previously. The release only applies the frozen coefficients."},
+  "units_warning": "Observed surface total MC (ELISA) is distinct from MC-LR process concentrations. Neither unmapped process values nor the observational dissolved fraction validate biochemical production or all three pool fractions independently."
+}

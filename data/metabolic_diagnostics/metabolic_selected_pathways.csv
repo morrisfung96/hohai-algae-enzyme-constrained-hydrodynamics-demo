@@ -1,0 +1,41 @@
+﻿scenario,nearest_datetime_local,pathway,group,edge_id,absolute_flux,relative_to_typical
+Typical-daylight,2021-08-20 09:00:00-0400,Carbon fixation,carbon,CO2-3PG,1.0992041781858293,1.0
+Typical-daylight,2021-08-20 09:00:00-0400,3PG to PEP,carbon,_3PG-PER,2.1984083563716585,1.0
+Typical-daylight,2021-08-20 09:00:00-0400,Pyruvate to acetyl-CoA,carbon,PYR-AcCoA,0.070413841045665,1.0
+Typical-daylight,2021-08-20 09:00:00-0400,Nitrate reduction,nitrogen,NO3--NO2-,0.17191446739637897,1.0
+Typical-daylight,2021-08-20 09:00:00-0400,Nitrite reduction,nitrogen,NO2--NH4_,0.17191446739637894,1.0
+Typical-daylight,2021-08-20 09:00:00-0400,Ammonium assimilation,nitrogen,NH4_-Glu,0.2963872748675986,1.0
+Typical-daylight,2021-08-20 09:00:00-0400,2-oxoglutarate supply,carbon-nitrogen,ICIT-2OG,0.03551039590766839,1.0
+Typical-daylight,2021-08-20 09:00:00-0400,MC-LR terminal synthesis,toxin,LMC-MCYST,0.0019029056808063946,1.0
+Low-N-daylight,2020-08-10 10:00:00-0400,Carbon fixation,carbon,CO2-3PG,0.9342404179463141,0.8499243693634989
+Low-N-daylight,2020-08-10 10:00:00-0400,3PG to PEP,carbon,_3PG-PER,1.868480835892628,0.8499243693634988
+Low-N-daylight,2020-08-10 10:00:00-0400,Pyruvate to acetyl-CoA,carbon,PYR-AcCoA,0.0598602258938707,0.8501201611065353
+Low-N-daylight,2020-08-10 10:00:00-0400,Nitrate reduction,nitrogen,NO3--NO2-,0.1460999999999965,0.8498412158828804
+Low-N-daylight,2020-08-10 10:00:00-0400,Nitrite reduction,nitrogen,NO2--NH4_,0.14609999999999648,0.8498412158828804
+Low-N-daylight,2020-08-10 10:00:00-0400,Ammonium assimilation,nitrogen,NH4_-Glu,0.2519101713457187,0.8499358532118203
+Low-N-daylight,2020-08-10 10:00:00-0400,2-oxoglutarate supply,carbon-nitrogen,ICIT-2OG,0.030182576870355683,0.8499645272565891
+Low-N-daylight,2020-08-10 10:00:00-0400,MC-LR terminal synthesis,toxin,LMC-MCYST,0.0016233333333336678,0.8530813427630042
+Low-P-daylight,2022-08-05 09:00:00-0400,Carbon fixation,carbon,CO2-3PG,1.0990491324682294,0.9998589472996221
+Low-P-daylight,2022-08-05 09:00:00-0400,3PG to PEP,carbon,_3PG-PER,2.198098264936459,0.9998589472996221
+Low-P-daylight,2022-08-05 09:00:00-0400,Pyruvate to acetyl-CoA,carbon,PYR-AcCoA,0.07039979311866,0.999800494806186
+Low-P-daylight,2022-08-05 09:00:00-0400,Nitrate reduction,nitrogen,NO3--NO2-,0.17191446739637045,0.9999999999999505
+Low-P-daylight,2022-08-05 09:00:00-0400,Nitrite reduction,nitrogen,NO2--NH4_,0.17191446739637045,0.9999999999999506
+Low-P-daylight,2022-08-05 09:00:00-0400,Ammonium assimilation,nitrogen,NH4_-Glu,0.2963821896694979,0.9999828427245976
+Low-P-daylight,2022-08-05 09:00:00-0400,2-oxoglutarate supply,carbon-nitrogen,ICIT-2OG,0.03551153089327809,1.000031962065775
+Low-P-daylight,2022-08-05 09:00:00-0400,MC-LR terminal synthesis,toxin,LMC-MCYST,0.0019101607488485614,1.0038126261933762
+Low-light-day,2021-08-20 19:00:00-0400,Carbon fixation,carbon,CO2-3PG,1.0990491324682294,0.9998589472996221
+Low-light-day,2021-08-20 19:00:00-0400,3PG to PEP,carbon,_3PG-PER,2.198098264936459,0.9998589472996221
+Low-light-day,2021-08-20 19:00:00-0400,Pyruvate to acetyl-CoA,carbon,PYR-AcCoA,0.07039979311866,0.999800494806186
+Low-light-day,2021-08-20 19:00:00-0400,Nitrate reduction,nitrogen,NO3--NO2-,0.17191446739637045,0.9999999999999505
+Low-light-day,2021-08-20 19:00:00-0400,Nitrite reduction,nitrogen,NO2--NH4_,0.17191446739637045,0.9999999999999506
+Low-light-day,2021-08-20 19:00:00-0400,Ammonium assimilation,nitrogen,NH4_-Glu,0.2963821896694979,0.9999828427245976
+Low-light-day,2021-08-20 19:00:00-0400,2-oxoglutarate supply,carbon-nitrogen,ICIT-2OG,0.03551153089327809,1.000031962065775
+Low-light-day,2021-08-20 19:00:00-0400,MC-LR terminal synthesis,toxin,LMC-MCYST,0.0019101607488485614,1.0038126261933762
+Dark-zero-light,2021-08-20 00:00:00-0400,Carbon fixation,carbon,CO2-3PG,0.0,0.0
+Dark-zero-light,2021-08-20 00:00:00-0400,3PG to PEP,carbon,_3PG-PER,0.0,0.0
+Dark-zero-light,2021-08-20 00:00:00-0400,Pyruvate to acetyl-CoA,carbon,PYR-AcCoA,0.0,0.0
+Dark-zero-light,2021-08-20 00:00:00-0400,Nitrate reduction,nitrogen,NO3--NO2-,0.0,0.0
+Dark-zero-light,2021-08-20 00:00:00-0400,Nitrite reduction,nitrogen,NO2--NH4_,0.0,0.0
+Dark-zero-light,2021-08-20 00:00:00-0400,Ammonium assimilation,nitrogen,NH4_-Glu,0.0,0.0
+Dark-zero-light,2021-08-20 00:00:00-0400,2-oxoglutarate supply,carbon-nitrogen,ICIT-2OG,0.0,0.0
+Dark-zero-light,2021-08-20 00:00:00-0400,MC-LR terminal synthesis,toxin,LMC-MCYST,0.0,0.0

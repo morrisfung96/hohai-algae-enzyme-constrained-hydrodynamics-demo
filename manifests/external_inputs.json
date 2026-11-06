@@ -1,0 +1,39 @@
+{
+  "status": "CHECKSUMMED_ARCHIVES_FOR_ASSOCIATED_RELEASE",
+  "planned_repository": "morrisfung96/hohai-algae-enzyme-constrained-hydrodynamics-demo",
+  "input_role": "Three-pool replay from frozen ecological states. This does not rerun the full upstream ecology.",
+  "assets": [
+    {
+      "year": 2019,
+      "file": "lake_inputs_2019.zip",
+      "bytes": 457194104,
+      "sha256": "4ea76d88d4dbfd1d075b29db77795ee353d040825c094f3c5b8d3da2f16594e6",
+      "url": "https://github.com/morrisfung96/hohai-algae-enzyme-constrained-hydrodynamics-demo/releases/download/v0.1.0/lake_inputs_2019.zip",
+      "role": "Frozen ecological states, offline geometry/velocities, retained initial toxin pools and reference outputs"
+    },
+    {
+      "year": 2020,
+      "file": "lake_inputs_2020.zip",
+      "bytes": 477810030,
+      "sha256": "3b1d4708ea111cf4f54db5aa35141ac5fc8e3e00ccb74155730c59b3967a319f",
+      "url": "https://github.com/morrisfung96/hohai-algae-enzyme-constrained-hydrodynamics-demo/releases/download/v0.1.0/lake_inputs_2020.zip",
+      "role": "Frozen ecological states, offline geometry/velocities, retained initial toxin pools and reference outputs"
+    },
+    {
+      "year": 2021,
+      "file": "lake_inputs_2021.zip",
+      "bytes": 495844111,
+      "sha256": "5737a0255aa473f953a27ad00d11a0cd9e51a156b2df70f3321c617830644488",
+      "url": "https://github.com/morrisfung96/hohai-algae-enzyme-constrained-hydrodynamics-demo/releases/download/v0.1.0/lake_inputs_2021.zip",
+      "role": "Frozen ecological states, offline geometry/velocities, retained initial toxin pools and reference outputs"
+    },
+    {
+      "year": 2022,
+      "file": "lake_inputs_2022.zip",
+      "bytes": 785008434,
+      "sha256": "588c4b6c339e7e68870ee13ce17fc4f017928d9970847740758f1e663fdc6f60",
+      "url": "https://github.com/morrisfung96/hohai-algae-enzyme-constrained-hydrodynamics-demo/releases/download/v0.1.0/lake_inputs_2022.zip",
+      "role": "Frozen ecological states, offline geometry/velocities, retained initial toxin pools and reference outputs"
+    }
+  ]
+}

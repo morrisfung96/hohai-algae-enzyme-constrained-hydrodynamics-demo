@@ -1,0 +1,25 @@
+{
+  "release_kind": "Frozen-state reproduction and ecological-kernel demonstration",
+  "planned_repository": "morrisfung96/hohai-algae-enzyme-constrained-hydrodynamics-demo",
+  "local_candidate_date": "2026-11-06",
+  "archive_reproduction_verified": true,
+  "tests_run": 20,
+  "unexpected_failures": 0,
+  "known_strict_scientific_expected_failures": 1,
+  "strict_source_growth_equality_certified": false,
+  "full_frozen_state_replay": {
+    "status": "ALL_FOUR_YEARS_THREE_VARIANTS_FULL_FROZEN_WINDOW_CLI_REGRESSION_PASS",
+    "year_variant_cases": 12,
+    "station_hour_rows_compared": 79296,
+    "station_day_rows_compared": 3336,
+    "ledger_rows_compared": 9900,
+    "max_station_hour_absolute_error": 0.0,
+    "max_station_day_absolute_error": 0.0,
+    "max_ledger_relative_error": 0.0
+  },
+  "fresh_full_lake_ecology_controller": "NOT_INCLUDED_IN_THIS_DEMO",
+  "FACHB905_network_distributed": false,
+  "historical_native_water_flux_recovery": "NOT_CLAIMED",
+  "repository_url": "https://github.com/morrisfung96/hohai-algae-enzyme-constrained-hydrodynamics-demo",
+  "release_tag": "v0.1.0"
+}

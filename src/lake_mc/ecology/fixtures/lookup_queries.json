@@ -1,0 +1,386 @@
+[
+  {
+    "query": {
+      "temp_C": 26.4,
+      "light_Wm2": 0.0,
+      "DIN_mgN_L": 0.46929,
+      "DIP_mgP_L": 0.00654,
+      "rho_growth_commitment": 0.6884701455907142,
+      "k_env": 4
+    },
+    "response": {
+      "matched_env_ids": "EXACT_NIGHT_GATE",
+      "matched_env_distance": 0.0,
+      "mu_max_h": 0.0,
+      "mu_committed_h": 0.0,
+      "toxin_capacity_upper_per_gDW_h": 0.0,
+      "mu_toxin_solution_h": 0.0,
+      "growth_constraint_target_raw": 0.0,
+      "biomass_flux_toxin_solution_raw": 0.0,
+      "growth_constraint_residual_raw": 0.0,
+      "growth_constraint_mode": "night_zero",
+      "toxin_solution_status": "night_zero",
+      "response_mode": "native_v16_FIX10_M1_global_proteome_reallocatable_joint_growth_view"
+    }
+  },
+  {
+    "query": {
+      "temp_C": 26.4,
+      "light_Wm2": 0.0,
+      "DIN_mgN_L": 0.46929,
+      "DIP_mgP_L": 0.00654,
+      "rho_growth_commitment": 0.686938718231781,
+      "k_env": 4
+    },
+    "response": {
+      "matched_env_ids": "EXACT_NIGHT_GATE",
+      "matched_env_distance": 0.0,
+      "mu_max_h": 0.0,
+      "mu_committed_h": 0.0,
+      "toxin_capacity_upper_per_gDW_h": 0.0,
+      "mu_toxin_solution_h": 0.0,
+      "growth_constraint_target_raw": 0.0,
+      "biomass_flux_toxin_solution_raw": 0.0,
+      "growth_constraint_residual_raw": 0.0,
+      "growth_constraint_mode": "night_zero",
+      "toxin_solution_status": "night_zero",
+      "response_mode": "native_v16_FIX10_M1_global_proteome_reallocatable_joint_growth_view"
+    }
+  },
+  {
+    "query": {
+      "temp_C": 26.4,
+      "light_Wm2": 0.0,
+      "DIN_mgN_L": 0.46929,
+      "DIP_mgP_L": 0.00654,
+      "rho_growth_commitment": 0.6854060995218765,
+      "k_env": 4
+    },
+    "response": {
+      "matched_env_ids": "EXACT_NIGHT_GATE",
+      "matched_env_distance": 0.0,
+      "mu_max_h": 0.0,
+      "mu_committed_h": 0.0,
+      "toxin_capacity_upper_per_gDW_h": 0.0,
+      "mu_toxin_solution_h": 0.0,
+      "growth_constraint_target_raw": 0.0,
+      "biomass_flux_toxin_solution_raw": 0.0,
+      "growth_constraint_residual_raw": 0.0,
+      "growth_constraint_mode": "night_zero",
+      "toxin_solution_status": "night_zero",
+      "response_mode": "native_v16_FIX10_M1_global_proteome_reallocatable_joint_growth_view"
+    }
+  },
+  {
+    "query": {
+      "temp_C": 26.4,
+      "light_Wm2": 0.0,
+      "DIN_mgN_L": 0.46929,
+      "DIP_mgP_L": 0.00654,
+      "rho_growth_commitment": 0.6838726594759046,
+      "k_env": 4
+    },
+    "response": {
+      "matched_env_ids": "EXACT_NIGHT_GATE",
+      "matched_env_distance": 0.0,
+      "mu_max_h": 0.0,
+      "mu_committed_h": 0.0,
+      "toxin_capacity_upper_per_gDW_h": 0.0,
+      "mu_toxin_solution_h": 0.0,
+      "growth_constraint_target_raw": 0.0,
+      "biomass_flux_toxin_solution_raw": 0.0,
+      "growth_constraint_residual_raw": 0.0,
+      "growth_constraint_mode": "night_zero",
+      "toxin_solution_status": "night_zero",
+      "response_mode": "native_v16_FIX10_M1_global_proteome_reallocatable_joint_growth_view"
+    }
+  },
+  {
+    "query": {
+      "temp_C": 26.4,
+      "light_Wm2": 0.0,
+      "DIN_mgN_L": 0.46929,
+      "DIP_mgP_L": 0.00654,
+      "rho_growth_commitment": 0.6823387568041784,
+      "k_env": 4
+    },
+    "response": {
+      "matched_env_ids": "EXACT_NIGHT_GATE",
+      "matched_env_distance": 0.0,
+      "mu_max_h": 0.0,
+      "mu_committed_h": 0.0,
+      "toxin_capacity_upper_per_gDW_h": 0.0,
+      "mu_toxin_solution_h": 0.0,
+      "growth_constraint_target_raw": 0.0,
+      "biomass_flux_toxin_solution_raw": 0.0,
+      "growth_constraint_residual_raw": 0.0,
+      "growth_constraint_mode": "night_zero",
+      "toxin_solution_status": "night_zero",
+      "response_mode": "native_v16_FIX10_M1_global_proteome_reallocatable_joint_growth_view"
+    }
+  },
+  {
+    "query": {
+      "temp_C": 26.4,
+      "light_Wm2": 0.0,
+      "DIN_mgN_L": 0.46929,
+      "DIP_mgP_L": 0.00654,
+      "rho_growth_commitment": 0.6808047391853903,
+      "k_env": 4
+    },
+    "response": {
+      "matched_env_ids": "EXACT_NIGHT_GATE",
+      "matched_env_distance": 0.0,
+      "mu_max_h": 0.0,
+      "mu_committed_h": 0.0,
+      "toxin_capacity_upper_per_gDW_h": 0.0,
+      "mu_toxin_solution_h": 0.0,
+      "growth_constraint_target_raw": 0.0,
+      "biomass_flux_toxin_solution_raw": 0.0,
+      "growth_constraint_residual_raw": 0.0,
+      "growth_constraint_mode": "night_zero",
+      "toxin_solution_status": "night_zero",
+      "response_mode": "native_v16_FIX10_M1_global_proteome_reallocatable_joint_growth_view"
+    }
+  },
+  {
+    "query": {
+      "temp_C": 26.4,
+      "light_Wm2": 11.2,
+      "DIN_mgN_L": 0.46929,
+      "DIP_mgP_L": 0.00654,
+      "rho_growth_commitment": 0.6792731422268525,
+      "k_env": 4
+    },
+    "response": {
+      "matched_env_ids": "V16ENV_04052;V16ENV_04059;V16ENV_04066",
+      "matched_env_distance": 5.285411483050895,
+      "mu_max_h": 0.023919199805306306,
+      "mu_committed_h": 0.017939399853979722,
+      "toxin_capacity_upper_per_gDW_h": 0.0045724830669320905,
+      "mu_toxin_solution_h": 0.017939399853979722,
+      "growth_constraint_target_raw": 1.7939399853979773e-05,
+      "biomass_flux_toxin_solution_raw": 1.7939399853979773e-05,
+      "growth_constraint_residual_raw": 0.0,
+      "growth_constraint_mode": "equality",
+      "toxin_solution_status": "optimal",
+      "response_mode": "native_v16_FIX10_M1_global_proteome_reallocatable_joint_growth_view"
+    }
+  },
+  {
+    "query": {
+      "temp_C": 26.4,
+      "light_Wm2": 110.72,
+      "DIN_mgN_L": 0.46929,
+      "DIP_mgP_L": 0.00654,
+      "rho_growth_commitment": 0.6777524148368158,
+      "k_env": 4
+    },
+    "response": {
+      "matched_env_ids": "V16ENV_04087;V16ENV_04094;V16ENV_04080;V16ENV_04073",
+      "matched_env_distance": 5.286370551108406,
+      "mu_max_h": 0.027187153438404128,
+      "mu_committed_h": 0.02039036507880305,
+      "toxin_capacity_upper_per_gDW_h": 0.004775401872121326,
+      "mu_toxin_solution_h": 0.02039036507880305,
+      "growth_constraint_target_raw": 2.0390365078803136e-05,
+      "biomass_flux_toxin_solution_raw": 2.0390365078803136e-05,
+      "growth_constraint_residual_raw": 0.0,
+      "growth_constraint_mode": "equality",
+      "toxin_solution_status": "optimal",
+      "response_mode": "native_v16_FIX10_M1_global_proteome_reallocatable_joint_growth_view"
+    }
+  },
+  {
+    "query": {
+      "temp_C": 26.4,
+      "light_Wm2": 276.58,
+      "DIN_mgN_L": 0.46929,
+      "DIP_mgP_L": 0.00654,
+      "rho_growth_commitment": 0.6762460035525135,
+      "k_env": 4
+    },
+    "response": {
+      "matched_env_ids": "V16ENV_04143;V16ENV_04136;V16ENV_04129;V16ENV_04122",
+      "matched_env_distance": 5.2857894380959145,
+      "mu_max_h": 0.027187153438404277,
+      "mu_committed_h": 0.02039036507880318,
+      "toxin_capacity_upper_per_gDW_h": 0.00477540187212105,
+      "mu_toxin_solution_h": 0.02039036507880318,
+      "growth_constraint_target_raw": 2.039036507880326e-05,
+      "biomass_flux_toxin_solution_raw": 2.039036507880326e-05,
+      "growth_constraint_residual_raw": 0.0,
+      "growth_constraint_mode": "equality",
+      "toxin_solution_status": "optimal",
+      "response_mode": "native_v16_FIX10_M1_global_proteome_reallocatable_joint_growth_view"
+    }
+  },
+  {
+    "query": {
+      "temp_C": 26.4,
+      "light_Wm2": 457.48,
+      "DIN_mgN_L": 0.46929,
+      "DIP_mgP_L": 0.00654,
+      "rho_growth_commitment": 0.6747551323898752,
+      "k_env": 4
+    },
+    "response": {
+      "matched_env_ids": "V16ENV_04150;V16ENV_04143;V16ENV_04149;V16ENV_04136",
+      "matched_env_distance": 5.319855646236599,
+      "mu_max_h": 0.0271871534384042,
+      "mu_committed_h": 0.018692618980385548,
+      "toxin_capacity_upper_per_gDW_h": 0.005968232878153179,
+      "mu_toxin_solution_h": 0.018692618980385548,
+      "growth_constraint_target_raw": 1.869261898038563e-05,
+      "biomass_flux_toxin_solution_raw": 1.869261898038563e-05,
+      "growth_constraint_residual_raw": 0.0,
+      "growth_constraint_mode": "equality",
+      "toxin_solution_status": "optimal",
+      "response_mode": "native_v16_FIX10_M1_global_proteome_reallocatable_joint_growth_view"
+    }
+  },
+  {
+    "query": {
+      "temp_C": 26.4,
+      "light_Wm2": 633.7,
+      "DIN_mgN_L": 0.46929,
+      "DIP_mgP_L": 0.00654,
+      "rho_growth_commitment": 0.6732802875258652,
+      "k_env": 4
+    },
+    "response": {
+      "matched_env_ids": "V16ENV_04150;V16ENV_04149;V16ENV_04151;V16ENV_04143",
+      "matched_env_distance": 5.413875772620946,
+      "mu_max_h": 0.0271871534384042,
+      "mu_committed_h": 0.019707122943826587,
+      "toxin_capacity_upper_per_gDW_h": 0.005255445621882734,
+      "mu_toxin_solution_h": 0.019707122943826587,
+      "growth_constraint_target_raw": 1.970712294382665e-05,
+      "biomass_flux_toxin_solution_raw": 1.970712294382665e-05,
+      "growth_constraint_residual_raw": 0.0,
+      "growth_constraint_mode": "equality",
+      "toxin_solution_status": "optimal",
+      "response_mode": "native_v16_FIX10_M1_global_proteome_reallocatable_joint_growth_view"
+    }
+  },
+  {
+    "query": {
+      "temp_C": 26.4,
+      "light_Wm2": 733.38,
+      "DIN_mgN_L": 0.46929,
+      "DIP_mgP_L": 0.00654,
+      "rho_growth_commitment": 0.6718215399806213,
+      "k_env": 4
+    },
+    "response": {
+      "matched_env_ids": "V16ENV_04150;V16ENV_04149;V16ENV_04151;V16ENV_04143",
+      "matched_env_distance": 5.493690417246529,
+      "mu_max_h": 0.027187153438404207,
+      "mu_committed_h": 0.019706657164288873,
+      "toxin_capacity_upper_per_gDW_h": 0.005255772877103687,
+      "mu_toxin_solution_h": 0.019706657164288873,
+      "growth_constraint_target_raw": 1.970665716428894e-05,
+      "biomass_flux_toxin_solution_raw": 1.970665716428894e-05,
+      "growth_constraint_residual_raw": 0.0,
+      "growth_constraint_mode": "equality",
+      "toxin_solution_status": "optimal",
+      "response_mode": "native_v16_FIX10_M1_global_proteome_reallocatable_joint_growth_view"
+    }
+  },
+  {
+    "query": {
+      "temp_C": 26.4,
+      "light_Wm2": 697.8,
+      "DIN_mgN_L": 0.46929,
+      "DIP_mgP_L": 0.00654,
+      "rho_growth_commitment": 0.6703786248155845,
+      "k_env": 4
+    },
+    "response": {
+      "matched_env_ids": "V16ENV_04150;V16ENV_04149;V16ENV_04151;V16ENV_04143",
+      "matched_env_distance": 5.463053023496953,
+      "mu_max_h": 0.0271871534384042,
+      "mu_committed_h": 0.019706520118097655,
+      "toxin_capacity_upper_per_gDW_h": 0.005255869165321516,
+      "mu_toxin_solution_h": 0.019706520118097655,
+      "growth_constraint_target_raw": 1.970652011809772e-05,
+      "biomass_flux_toxin_solution_raw": 1.970652011809772e-05,
+      "growth_constraint_residual_raw": 0.0,
+      "growth_constraint_mode": "equality",
+      "toxin_solution_status": "optimal",
+      "response_mode": "native_v16_FIX10_M1_global_proteome_reallocatable_joint_growth_view"
+    }
+  },
+  {
+    "query": {
+      "temp_C": 26.4,
+      "light_Wm2": 704.83,
+      "DIN_mgN_L": 0.46929,
+      "DIP_mgP_L": 0.00654,
+      "rho_growth_commitment": 0.6689513799273574,
+      "k_env": 4
+    },
+    "response": {
+      "matched_env_ids": "V16ENV_04150;V16ENV_04149;V16ENV_04151;V16ENV_04143",
+      "matched_env_distance": 5.469043514431267,
+      "mu_max_h": 0.0271871534384042,
+      "mu_committed_h": 0.019706288901338583,
+      "toxin_capacity_upper_per_gDW_h": 0.005256031617480642,
+      "mu_toxin_solution_h": 0.019706288901338583,
+      "growth_constraint_target_raw": 1.9706288901338647e-05,
+      "biomass_flux_toxin_solution_raw": 1.9706288901338647e-05,
+      "growth_constraint_residual_raw": 0.0,
+      "growth_constraint_mode": "equality",
+      "toxin_solution_status": "optimal",
+      "response_mode": "native_v16_FIX10_M1_global_proteome_reallocatable_joint_growth_view"
+    }
+  },
+  {
+    "query": {
+      "temp_C": 26.4,
+      "light_Wm2": 629.4,
+      "DIN_mgN_L": 0.46929,
+      "DIP_mgP_L": 0.00654,
+      "rho_growth_commitment": 0.6675394340076372,
+      "k_env": 4
+    },
+    "response": {
+      "matched_env_ids": "V16ENV_04150;V16ENV_04149;V16ENV_04151;V16ENV_04143",
+      "matched_env_distance": 5.411355449976458,
+      "mu_max_h": 0.027187153438404204,
+      "mu_committed_h": 0.01970625139312004,
+      "toxin_capacity_upper_per_gDW_h": 0.005256057970635629,
+      "mu_toxin_solution_h": 0.01970625139312004,
+      "growth_constraint_target_raw": 1.9706251393120107e-05,
+      "biomass_flux_toxin_solution_raw": 1.9706251393120107e-05,
+      "growth_constraint_residual_raw": 0.0,
+      "growth_constraint_mode": "equality",
+      "toxin_solution_status": "optimal",
+      "response_mode": "native_v16_FIX10_M1_global_proteome_reallocatable_joint_growth_view"
+    }
+  },
+  {
+    "query": {
+      "temp_C": 26.4,
+      "light_Wm2": 650.45,
+      "DIN_mgN_L": 0.46929,
+      "DIP_mgP_L": 0.00654,
+      "rho_growth_commitment": 0.6661426768328178,
+      "k_env": 4
+    },
+    "response": {
+      "matched_env_ids": "V16ENV_04150;V16ENV_04149;V16ENV_04151;V16ENV_04143",
+      "matched_env_distance": 5.426437464565041,
+      "mu_max_h": 0.0271871534384042,
+      "mu_committed_h": 0.019705985830319607,
+      "toxin_capacity_upper_per_gDW_h": 0.005256244554214112,
+      "mu_toxin_solution_h": 0.019705985830319607,
+      "growth_constraint_target_raw": 1.9705985830319676e-05,
+      "biomass_flux_toxin_solution_raw": 1.9705985830319676e-05,
+      "growth_constraint_residual_raw": 0.0,
+      "growth_constraint_mode": "equality",
+      "toxin_solution_status": "optimal",
+      "response_mode": "native_v16_FIX10_M1_global_proteome_reallocatable_joint_growth_view"
+    }
+  }
+]

@@ -1,0 +1,265 @@
+{
+  "purpose": "Presentation-only manuscript asset layout; no model run or model data modification.",
+  "scientific_coordinates_changed": false,
+  "actions": [
+    {
+      "figure": 1,
+      "operation": "byte-identical copy",
+      "input": {
+        "path": "docs\\manuscript_revision_est_rev_est_structure\\review_20261028\\media\\image1.png",
+        "sha256": "b88557af1ba9ac9ea19fa5d4f8a52ac5102b24923650abe8c036d0f63ee8f31f",
+        "pixels": [
+          1302,
+          1080
+        ]
+      },
+      "output": {
+        "path": "docs\\manuscript_consistency_source_review_20261028\\figures\\Figure1.png",
+        "sha256": "b88557af1ba9ac9ea19fa5d4f8a52ac5102b24923650abe8c036d0f63ee8f31f",
+        "pixels": [
+          1302,
+          1080
+        ]
+      },
+      "note": "Original user artwork retained."
+    },
+    {
+      "figure": 2,
+      "operation": "byte-identical copy",
+      "input": {
+        "path": "docs\\manuscript_revision_est_rev_est_structure\\figures\\Figure2.png",
+        "sha256": "ae10c00e4f73ddcac19d5384e50b90bc5ac93b55a18f27bf316d4cab19e02551",
+        "pixels": [
+          1647,
+          1870
+        ]
+      },
+      "output": {
+        "path": "docs\\manuscript_consistency_source_review_20261028\\figures\\Figure2.png",
+        "sha256": "ae10c00e4f73ddcac19d5384e50b90bc5ac93b55a18f27bf316d4cab19e02551",
+        "pixels": [
+          1647,
+          1870
+        ]
+      },
+      "note": "Original user artwork retained."
+    },
+    {
+      "figure": 4,
+      "operation": "byte-identical copy",
+      "input": {
+        "path": "docs\\manuscript_revision_est_rev_est_structure\\figures\\Figure4.png",
+        "sha256": "33dfaa8d4ee8b2216fbf9b5d6d666223745a6f124e2a5ccbcf698a3c63c63a91",
+        "pixels": [
+          3375,
+          3475
+        ]
+      },
+      "output": {
+        "path": "docs\\manuscript_consistency_source_review_20261028\\figures\\Figure4.png",
+        "sha256": "33dfaa8d4ee8b2216fbf9b5d6d666223745a6f124e2a5ccbcf698a3c63c63a91",
+        "pixels": [
+          3375,
+          3475
+        ]
+      },
+      "note": "Figure4 inspected: all six panels and user-selected teal/apricot state palette retained."
+    },
+    {
+      "figure": 3,
+      "input": {
+        "path": "docs\\manuscript_revision_est_rev_est_structure\\figures\\Figure3.png",
+        "sha256": "62d0f2935b606e4fbc424e6e449252ff882e8ac0c94482b159e822865ca09c12",
+        "pixels": [
+          4500,
+          4320
+        ]
+      },
+      "output": {
+        "path": "docs\\manuscript_consistency_source_review_20261028\\figures\\Figure3.png",
+        "sha256": "d3189327464b22986b97d5b90b13f8a05ce318a57d725565c7637c21cd243491",
+        "pixels": [
+          4500,
+          4320
+        ]
+      },
+      "operations": [
+        {
+          "region_pixels": [
+            1684,
+            2454,
+            2880,
+            2566
+          ],
+          "operation": "Reset only original white title band and reflow the exact original full panel-d title onto two lines."
+        },
+        {
+          "region_pixels": [
+            180,
+            2420,
+            1230,
+            4194
+          ],
+          "operation": "Re-render only panel c from original frozen plotting data with unchanged numerical coordinates, phase colors, markers, labels, counts and axis limits; lower frame height by 85px and place the same 4-entry legend below the frame."
+        },
+        {
+          "region_pixels": [
+            1230,
+            3595,
+            1672,
+            3758
+          ],
+          "operation": "Reflow the exact existing 2019 conditional holdout label and unchanged 0.26 to 1.68 values into the blank inter-panel gutter; avoid its previous overlap with panel c."
+        }
+      ],
+      "panel_c_plot_data": {
+        "path": "docs\\est_figure3_component_contributions_v18\\figure_ready_data\\fig3c_adjacent_date_log_changes.csv",
+        "sha256": "72f279ee75465b82445363085cae218d493df9329b08c11f3f3d9489376e01ba",
+        "pixels": null
+      },
+      "panel_c_renderer": {
+        "path": "scripts\\build_est_figure3_component_contributions_v17.py",
+        "sha256": "e6ffa9662b6ac2871a9913cd2d05ef84a0d496f7ad04a7869b019c58b4067871",
+        "pixels": null
+      },
+      "panel_c_row_count": 149,
+      "panel_c_coordinate_sha256": "8e6ae155f8b169e9554c2306b82a6afeea60b0f2682536e4a452aa4c9dac72eb",
+      "panel_c_axis_limit": 1.0,
+      "pixel_equality_outside_declared_regions": true
+    },
+    {
+      "figure": "S6_1",
+      "output": {
+        "path": "docs\\manuscript_consistency_source_review_20261028\\figures\\FigureS6_1.png",
+        "sha256": "d4b30040bfbf19af748d708458f8722f103037c5b2f959c20ba017c1d28bcfd9",
+        "pixels": [
+          2010,
+          3300
+        ]
+      },
+      "inputs": [
+        {
+          "path": "docs\\est_figure2_draft_v2\\representative_flux_maps_v6_module_color_ramp\\typical_daylight_v6_purple_c_deep_hollow_module_color_ramp_2400w.png",
+          "sha256": "cb5a3f81cfe2fdd69c7acd1c566a9ad23cdc1dbc5bfa022a94736afa85aad6b4",
+          "pixels": [
+            2400,
+            1757
+          ],
+          "alpha_bbox": [
+            172,
+            83,
+            2001,
+            1621
+          ],
+          "crop_pixels": [
+            140,
+            50,
+            2030,
+            1650
+          ],
+          "placement_pixels": [
+            60,
+            20
+          ],
+          "pixel_resampling": false,
+          "operation": "Composite source RGBA over opaque white; remove only transparent perimeter; paste original pixels without resampling."
+        },
+        {
+          "path": "docs\\est_figure2_draft_v2\\representative_flux_maps_v6_module_color_ramp\\low_nitrogen_daylight_v6_purple_c_deep_hollow_module_color_ramp_2400w.png",
+          "sha256": "c4c76b1f2c97550fba7b10332e4c6aa829ffbf9649a7eaac019c25acbbadc235",
+          "pixels": [
+            2400,
+            1757
+          ],
+          "alpha_bbox": [
+            172,
+            83,
+            2001,
+            1621
+          ],
+          "crop_pixels": [
+            140,
+            50,
+            2030,
+            1650
+          ],
+          "placement_pixels": [
+            60,
+            1680
+          ],
+          "pixel_resampling": false,
+          "operation": "Composite source RGBA over opaque white; remove only transparent perimeter; paste original pixels without resampling."
+        }
+      ],
+      "matching_basis": "Exact four retained v6 module-color-ramp panels visually matched against current Figure2b; same reaction layout, original titles, legends and condition bars. Night source SVG explicitly retains Night glycogen use and glycogen reverse arm 0.012.",
+      "note": "Enlarged presentation of existing Figure2b artwork, not a newly calculated model result. All original labels retained; no scientific annotation or numerical value edited."
+    },
+    {
+      "figure": "S6_2",
+      "output": {
+        "path": "docs\\manuscript_consistency_source_review_20261028\\figures\\FigureS6_2.png",
+        "sha256": "1f2777dc32039dd1028b9c4971d401dd189ae96bc81004be096cdfecbae6466b",
+        "pixels": [
+          2010,
+          3300
+        ]
+      },
+      "inputs": [
+        {
+          "path": "docs\\est_figure2_draft_v2\\representative_flux_maps_v6_module_color_ramp\\low_phosphorus_daylight_v6_purple_c_deep_hollow_module_color_ramp_2400w.png",
+          "sha256": "2ef6ce27fdadff7c43ecd326be10674d3ea037114500d63b05cec23ac858997c",
+          "pixels": [
+            2400,
+            1757
+          ],
+          "alpha_bbox": [
+            172,
+            83,
+            2001,
+            1621
+          ],
+          "crop_pixels": [
+            140,
+            50,
+            2030,
+            1650
+          ],
+          "placement_pixels": [
+            60,
+            20
+          ],
+          "pixel_resampling": false,
+          "operation": "Composite source RGBA over opaque white; remove only transparent perimeter; paste original pixels without resampling."
+        },
+        {
+          "path": "docs\\est_figure2_draft_v2\\representative_flux_maps_v6_module_color_ramp\\low_light_dark_v6_purple_c_deep_hollow_module_color_ramp_2400w.png",
+          "sha256": "02d972b58052b4f4d02020ce388ebb93e487dec432a0cce04a8e35efcef35c0e",
+          "pixels": [
+            2400,
+            1757
+          ],
+          "alpha_bbox": [
+            172,
+            83,
+            2001,
+            1621
+          ],
+          "crop_pixels": [
+            140,
+            50,
+            2030,
+            1650
+          ],
+          "placement_pixels": [
+            60,
+            1680
+          ],
+          "pixel_resampling": false,
+          "operation": "Composite source RGBA over opaque white; remove only transparent perimeter; paste original pixels without resampling."
+        }
+      ],
+      "matching_basis": "Exact four retained v6 module-color-ramp panels visually matched against current Figure2b; same reaction layout, original titles, legends and condition bars. Night source SVG explicitly retains Night glycogen use and glycogen reverse arm 0.012.",
+      "note": "Enlarged presentation of existing Figure2b artwork, not a newly calculated model result. All original labels retained; no scientific annotation or numerical value edited."
+    }
+  ]
+}

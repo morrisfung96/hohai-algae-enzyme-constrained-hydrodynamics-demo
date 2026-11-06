@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lake-erie-metabolic-response"
+version = "0.1.0"
+description = "Precomputed metabolic responses and lake-scale ecological, microcystin, and observation analyses"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0,<3", "pandas>=2.2,<4", "scipy>=1.15,<2", "tzdata>=2025"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"lake_mc.ecology" = ["*.json", "*.txt", "fixtures/*.json", "fixtures/*.csv"]
+

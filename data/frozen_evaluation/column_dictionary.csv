@@ -1,0 +1,287 @@
+file,column,unit,description,role
+formal_predictions_164.csv,sample_id,identifier,Unique official window|station|date sample key,frozen input or reference
+formal_predictions_164.csv,year,year,Calendar year,frozen input or reference
+formal_predictions_164.csv,window_id,identifier,Frozen lake simulation window identifier,frozen input or reference
+formal_predictions_164.csv,station_name,identifier,Official sampling station identifier,frozen input or reference
+formal_predictions_164.csv,date,YYYY-MM-DD,Station sampling date; inherited original aggregation basis,frozen input or reference
+formal_predictions_164.csv,surface_LODhalf,ug/L total MC,"Observed surface particulate+dissolved ELISA total MC, nondetects set to LOD/2; official target",frozen input or reference
+formal_predictions_164.csv,depth_m,m,Frozen station-neighborhood water depth,frozen input or reference
+formal_predictions_164.csv,depthavg_vector_speed_mps,m/s,Magnitude of the frozen depth-averaged velocity vector,frozen input or reference
+formal_predictions_164.csv,depth_gate,dimensionless,Shallow-water factor in the adopted surface operator,frozen input or reference
+formal_predictions_164.csv,retention_gate,dimensionless,Weak-flow retention factor in the adopted surface operator,frozen input or reference
+formal_predictions_164.csv,driver_depth_retention,dimensionless,Product of depth_gate and retention_gate,frozen input or reference
+formal_predictions_164.csv,revb_factor,dimensionless,Adopted particulate surface factor 1+2*depth_gate*retention_gate,frozen input or reference
+formal_predictions_164.csv,Dynamic_RevB_process_ugL,ug/L MC-LR process,"Surface-expressed process concentration, dissolved + factor*(live intracellular+dead-algal particulate)",frozen input or reference
+formal_predictions_164.csv,Dynamic_RevB_I_ugL,ug/L MC-LR process,"Frozen water-column phase concentration; I live intracellular, P dead-algal particulate, D dissolved",frozen input or reference
+formal_predictions_164.csv,Dynamic_RevB_P_ugL,ug/L MC-LR process,"Frozen water-column phase concentration; I live intracellular, P dead-algal particulate, D dissolved",frozen input or reference
+formal_predictions_164.csv,Dynamic_RevB_D_ugL,ug/L MC-LR process,"Frozen water-column phase concentration; I live intracellular, P dead-algal particulate, D dissolved",frozen input or reference
+formal_predictions_164.csv,Fixed_capacity_RevB_process_ugL,ug/L MC-LR process,"Surface-expressed process concentration, dissolved + factor*(live intracellular+dead-algal particulate)",frozen input or reference
+formal_predictions_164.csv,Fixed_capacity_RevB_I_ugL,ug/L MC-LR process,"Frozen water-column phase concentration; I live intracellular, P dead-algal particulate, D dissolved",frozen input or reference
+formal_predictions_164.csv,Fixed_capacity_RevB_P_ugL,ug/L MC-LR process,"Frozen water-column phase concentration; I live intracellular, P dead-algal particulate, D dissolved",frozen input or reference
+formal_predictions_164.csv,Fixed_capacity_RevB_D_ugL,ug/L MC-LR process,"Frozen water-column phase concentration; I live intracellular, P dead-algal particulate, D dissolved",frozen input or reference
+formal_predictions_164.csv,Biomass_source_RevB_process_ugL,ug/L MC-LR process,"Surface-expressed process concentration, dissolved + factor*(live intracellular+dead-algal particulate)",frozen input or reference
+formal_predictions_164.csv,Biomass_source_RevB_I_ugL,ug/L MC-LR process,"Frozen water-column phase concentration; I live intracellular, P dead-algal particulate, D dissolved",frozen input or reference
+formal_predictions_164.csv,Biomass_source_RevB_P_ugL,ug/L MC-LR process,"Frozen water-column phase concentration; I live intracellular, P dead-algal particulate, D dissolved",frozen input or reference
+formal_predictions_164.csv,Biomass_source_RevB_D_ugL,ug/L MC-LR process,"Frozen water-column phase concentration; I live intracellular, P dead-algal particulate, D dissolved",frozen input or reference
+formal_predictions_164.csv,Dynamic RevB_fixed_archived_prediction_ugL,ug/L total MC,Archived observation-mapped concentration; see model dictionary for formal versus historical mapping role,"historical fixed-mapping comparison, excluded from default main model comparison"
+formal_predictions_164.csv,Dynamic RevB_refit_ols_prediction_ugL,ug/L total MC,Archived observation-mapped concentration; see model dictionary for formal versus historical mapping role,frozen input or reference
+formal_predictions_164.csv,Dynamic RevB_refit_q80_prediction_ugL,ug/L total MC,Archived observation-mapped concentration; see model dictionary for formal versus historical mapping role,frozen input or reference
+formal_predictions_164.csv,Fixed capacity RevB_fixed_archived_prediction_ugL,ug/L total MC,Archived observation-mapped concentration; see model dictionary for formal versus historical mapping role,"historical fixed-mapping comparison, excluded from default main model comparison"
+formal_predictions_164.csv,Fixed capacity RevB_refit_ols_prediction_ugL,ug/L total MC,Archived observation-mapped concentration; see model dictionary for formal versus historical mapping role,frozen input or reference
+formal_predictions_164.csv,Fixed capacity RevB_refit_q80_prediction_ugL,ug/L total MC,Archived observation-mapped concentration; see model dictionary for formal versus historical mapping role,frozen input or reference
+formal_predictions_164.csv,Biomass source RevB_fixed_archived_prediction_ugL,ug/L total MC,Archived observation-mapped concentration; see model dictionary for formal versus historical mapping role,"historical fixed-mapping comparison, excluded from default main model comparison"
+formal_predictions_164.csv,Biomass source RevB_refit_ols_prediction_ugL,ug/L total MC,Archived observation-mapped concentration; see model dictionary for formal versus historical mapping role,frozen input or reference
+formal_predictions_164.csv,Biomass source RevB_refit_q80_prediction_ugL,ug/L total MC,Archived observation-mapped concentration; see model dictionary for formal versus historical mapping role,frozen input or reference
+formal_predictions_164.csv,Dynamic_RevB_loyo_prediction_ugL,ug/L total MC,Archived observation-mapped concentration; see model dictionary for formal versus historical mapping role,frozen input or reference
+formal_predictions_164.csv,Fixed_capacity_RevB_loyo_prediction_ugL,ug/L total MC,Archived observation-mapped concentration; see model dictionary for formal versus historical mapping role,frozen input or reference
+formal_predictions_164.csv,Biomass_source_RevB_loyo_prediction_ugL,ug/L total MC,Archived observation-mapped concentration; see model dictionary for formal versus historical mapping role,frozen input or reference
+formal_predictions_164.csv,dynamic_revb_dissolved_fraction,fraction,Dissolved modeled process concentration divided by surface-expressed three-phase MC-LR process concentration,frozen input or reference
+formal_predictions_164.csv,observed_dissolved_fraction,fraction,Observed dissolved/(dissolved+particulate) ELISA MC,frozen input or reference
+formal_loyo_parameters.csv,scenario,identifier,"Original scenario label, see model_dictionary.json",frozen input or reference
+formal_loyo_parameters.csv,mapping,category,"Archived mapping type; refit_* denotes previously fitted, now frozen coefficients",frozen input or reference
+formal_loyo_parameters.csv,holdout_year,year,LOYO held-out evaluation year,frozen input or reference
+formal_loyo_parameters.csv,n_train,samples,Number of training rows in the archived fold,frozen input or reference
+formal_loyo_parameters.csv,n_test,samples,Number of held-out rows in the archived fold,frozen input or reference
+formal_loyo_parameters.csv,intercept,log10 concentration scale,Frozen log10(process+0.01) to log10(observed+0.01) mapping intercept,frozen input or reference
+formal_loyo_parameters.csv,slope,dimensionless,Frozen log-log observation-mapping slope,frozen input or reference
+formal_metrics_reference.csv,scenario,identifier,"Original scenario label, see model_dictionary.json",frozen input or reference
+formal_metrics_reference.csv,mapping,category,"Archived mapping type; refit_* denotes previously fitted, now frozen coefficients",frozen input or reference
+formal_metrics_reference.csv,scope,category,all years or one held-out evaluation year,frozen input or reference
+formal_metrics_reference.csv,n,samples,Number of evaluated rows,frozen input or reference
+formal_metrics_reference.csv,MAE_log10_offset001,log10 units,"Archived log-error or paired log-error-difference statistic; MC offset 0.01, biomass offset zero",frozen input or reference
+formal_metrics_reference.csv,prediction_max_ugL,ug/L total MC,Archived summary of observation-mapped predictions,frozen input or reference
+formal_metrics_reference.csv,prediction_p95_ugL,ug/L total MC,Archived summary of observation-mapped predictions,frozen input or reference
+formal_metrics_reference.csv,prediction_median_ugL,ug/L total MC,Archived summary of observation-mapped predictions,frozen input or reference
+formal_metrics_reference.csv,raw_process_max_ugL,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+formal_metrics_reference.csv,raw_process_high_event_median_ugL,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+formal_metrics_reference.csv,raw_process_low_event_median_ugL,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+formal_metrics_reference.csv,raw_process_auc_obs_ge5,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+formal_metrics_reference.csv,raw_process_spearman_observed,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+formal_metrics_reference.csv,threshold_ugL,ug/L total MC,"Concentration threshold, inclusive >=",frozen input or reference
+formal_metrics_reference.csv,observed_positive,samples,Observed concentrations at or above threshold,frozen input or reference
+formal_metrics_reference.csv,predicted_positive,samples,Predicted concentrations at or above threshold,frozen input or reference
+formal_metrics_reference.csv,TP,samples,True positive threshold calls,frozen input or reference
+formal_metrics_reference.csv,FP,samples,False positive threshold calls,frozen input or reference
+formal_metrics_reference.csv,FN,samples,False negative threshold calls,frozen input or reference
+formal_metrics_reference.csv,TN,samples,True negative threshold calls,frozen input or reference
+formal_metrics_reference.csv,recall,fraction,TP/(TP+FN); missing when no observed positives,frozen input or reference
+formal_metrics_reference.csv,PPV,fraction,TP/(TP+FP); missing when no predicted positives,frozen input or reference
+mapping_intervals_12.csv,input,identifier,"Original mapping-input scenario label, see model_dictionary.json",frozen input or reference
+mapping_intervals_12.csv,holdout_year,year,LOYO held-out evaluation year,frozen input or reference
+mapping_intervals_12.csv,n_train,samples,Number of training rows in the archived fold,frozen input or reference
+mapping_intervals_12.csv,intercept,log10 concentration scale,Frozen log10(process+0.01) to log10(observed+0.01) mapping intercept,frozen input or reference
+mapping_intervals_12.csv,intercept_low,log10 concentration scale,Archived 2.5th percentile of mapping intercept,frozen input or reference
+mapping_intervals_12.csv,intercept_high,log10 concentration scale,Archived 97.5th percentile of mapping intercept,frozen input or reference
+mapping_intervals_12.csv,slope,dimensionless,Frozen log-log observation-mapping slope,frozen input or reference
+mapping_intervals_12.csv,slope_low,dimensionless,Archived 2.5th percentile of mapping slope,frozen input or reference
+mapping_intervals_12.csv,slope_high,dimensionless,Archived 97.5th percentile of mapping slope,frozen input or reference
+stratified_metrics_reference.csv,dimension,category,Environmental or observed-stage grouping variable,frozen input or reference
+stratified_metrics_reference.csv,stratum,category,Group within the specified dimension,frozen input or reference
+stratified_metrics_reference.csv,model,identifier,"Original model label, see model_dictionary.json",frozen input or reference
+stratified_metrics_reference.csv,n,samples,Number of evaluated rows,frozen input or reference
+stratified_metrics_reference.csv,MAE_log_offset,log10 units,"Archived log-error or paired log-error-difference statistic; MC offset 0.01, biomass offset zero",frozen input or reference
+stratified_metrics_reference.csv,bias_log_offset,log10 units,"Archived log-error or paired log-error-difference statistic; MC offset 0.01, biomass offset zero",frozen input or reference
+stratified_differences_reference.csv,dimension,category,Environmental or observed-stage grouping variable,frozen input or reference
+stratified_differences_reference.csv,stratum,category,Group within the specified dimension,frozen input or reference
+stratified_differences_reference.csv,comparison,text,Original archive label or protocol descriptor,frozen input or reference
+stratified_differences_reference.csv,n,samples,Number of evaluated rows,frozen input or reference
+stratified_differences_reference.csv,difference_alternative_minus_dynamic,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+stratified_differences_reference.csv,station_ci_low,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+stratified_differences_reference.csv,station_ci_high,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+stratified_differences_reference.csv,date_ci_low,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+stratified_differences_reference.csv,date_ci_high,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+common_predictions_164.csv,sample_id,identifier,Unique official window|station|date sample key,frozen input or reference
+common_predictions_164.csv,Dynamic RevB,ug/L total MC,Dynamic metabolic capacity with depth-retention surface expression; LOYO OLS,frozen input or reference
+common_predictions_164.csv,Fixed capacity RevB,ug/L total MC,Fixed-capacity toxin source with depth-retention surface expression; LOYO OLS,frozen input or reference
+common_predictions_164.csv,Biomass source RevB,ug/L total MC,Biomass-proportional toxin source with depth-retention surface expression; LOYO OLS,frozen input or reference
+common_predictions_164.csv,Dynamic q80 RevB,ug/L total MC,Dynamic metabolic capacity with depth-retention surface expression; LOYO quantile 0.80,frozen input or reference
+common_predictions_164.csv,Model biomass,ug/L total MC,Regression on model biomass; LOYO baseline,frozen input or reference
+common_predictions_164.csv,Model biomass and composition,ug/L total MC,Regression on model biomass and composition; LOYO baseline,frozen input or reference
+common_predictions_164.csv,Training median,ug/L total MC,Training-year median; LOYO baseline,frozen input or reference
+target_and_process_features_164.csv,sample_id,identifier,Unique official window|station|date sample key,frozen input or reference
+target_and_process_features_164.csv,year,year,Calendar year,frozen input or reference
+target_and_process_features_164.csv,window_id,identifier,Frozen lake simulation window identifier,frozen input or reference
+target_and_process_features_164.csv,station_name,identifier,Official sampling station identifier,frozen input or reference
+target_and_process_features_164.csv,date,YYYY-MM-DD,Station sampling date; inherited original aggregation basis,frozen input or reference
+target_and_process_features_164.csv,archive_mixed,ug/L total MC,Historical archived mixed-depth target; not current surface target,frozen input or reference
+target_and_process_features_164.csv,mixed_LODhalf,ug/L total MC,Historical mixed-depth target; not current surface target,frozen input or reference
+target_and_process_features_164.csv,surface_LODzero,ug/L total MC,"Historical target sensitivity, nondetects set to zero; not default target",frozen input or reference
+target_and_process_features_164.csv,surface_LODhalf,ug/L total MC,"Observed surface particulate+dissolved ELISA total MC, nondetects set to LOD/2; official target",frozen input or reference
+target_and_process_features_164.csv,surface_LODupper,ug/L total MC,"Historical target sensitivity, nondetects set to detection limit; not default target",frozen input or reference
+target_and_process_features_164.csv,surface_particulate,ug/L total MC,Observed surface particulate ELISA MC,frozen input or reference
+target_and_process_features_164.csv,surface_dissolved,ug/L total MC,Observed surface dissolved ELISA MC,frozen input or reference
+target_and_process_features_164.csv,surface_depth_m,m,Surface observation sampling-depth basis,frozen input or reference
+target_and_process_features_164.csv,B_micro_gDW_m3,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+target_and_process_features_164.csv,B_total_live_gDW_m3,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+target_and_process_features_164.csv,p_micro,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+target_and_process_features_164.csv,f_eff_mean,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+target_and_process_features_164.csv,B_tox_mean,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+target_and_process_features_164.csv,B_total_state_mean,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+target_and_process_features_164.csv,q_mean,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+target_and_process_features_164.csv,active_mean,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+target_and_process_features_164.csv,B_active_tox_mean,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+target_and_process_features_164.csv,BIOMASS_PROPORTIONAL_DEVELOPMENT_MATCHED,ug/L MC-LR process,Unmapped water-column total process concentration for named source scenario,frozen input or reference
+target_and_process_features_164.csv,DYNAMIC_METABOLIC_CAPACITY,ug/L MC-LR process,Unmapped water-column total process concentration for named source scenario,frozen input or reference
+target_and_process_features_164.csv,FIXED_CAPACITY_DEVELOPMENT_MATCHED,ug/L MC-LR process,Unmapped water-column total process concentration for named source scenario,frozen input or reference
+stratification_variables_124.csv,sample_id,identifier,Unique official window|station|date sample key,frozen input or reference
+stratification_variables_124.csv,year,year,Calendar year,frozen input or reference
+stratification_variables_124.csv,station_name,identifier,Official sampling station identifier,frozen input or reference
+stratification_variables_124.csv,date,YYYY-MM-DD,Station sampling date; inherited original aggregation basis,frozen input or reference
+stratification_variables_124.csv,observed,ug/L total MC,Observed official surface total MC target in the 124-row stratification table,frozen input or reference
+stratification_variables_124.csv,chla_ugL,ug/L Chl-a,Observed chlorophyll-a for environmental/stage stratification,frozen input or reference
+stratification_variables_124.csv,total_mc_half_ugL,ug/L total MC,Observed surface total MC with LOD/2 convention,frozen input or reference
+stratification_variables_124.csv,surface_depth_m,m,Surface observation sampling-depth basis,frozen input or reference
+stratification_variables_124.csv,delta_log_chla,log10 units,Adjacent-date change in observed log10 Chl-a within a station-year,frozen input or reference
+stratification_variables_124.csv,gap_days,d,Time between adjacent official sampling dates,frozen input or reference
+stratification_variables_124.csv,window_id,identifier,Frozen lake simulation window identifier,frozen input or reference
+stratification_variables_124.csv,n_hours,h,Daily environmental aggregation support,frozen input or reference
+stratification_variables_124.csv,time_basis,text,"Inherited daily timestamp basis, America/Detroit local 00-23",frozen input or reference
+stratification_variables_124.csv,environment_scope,text,Environmental-driver spatial support,frozen input or reference
+stratification_variables_124.csv,source_window_ids,identifier,Original environmental driver window,frozen input or reference
+stratification_variables_124.csv,utc_start,UTC timestamp,First hourly environmental record used in the local-day aggregate,frozen input or reference
+stratification_variables_124.csv,utc_end,UTC timestamp,Last hourly environmental record used in the local-day aggregate,frozen input or reference
+stratification_variables_124.csv,temp_C,degree C,Aggregated environmental temperature,frozen input or reference
+stratification_variables_124.csv,light_Wm2,W/m2,Aggregated light forcing,frozen input or reference
+stratification_variables_124.csv,DIN_mgN_L,mg N/L,Aggregated dissolved inorganic nitrogen,frozen input or reference
+stratification_variables_124.csv,DIP_mgP_L,mg P/L,Aggregated dissolved inorganic phosphorus,frozen input or reference
+biomass_surface_2022_64.csv,year,year,Calendar year,frozen input or reference
+biomass_surface_2022_64.csv,station_name,identifier,Official sampling station identifier,frozen input or reference
+biomass_surface_2022_64.csv,date,YYYY-MM-DD,Station sampling date; inherited original aggregation basis,frozen input or reference
+biomass_surface_2022_64.csv,field_chla_ugL,ug/L Chl-a,Observed field chlorophyll-a used for the independent biomass proxy,frozen input or reference
+biomass_surface_2022_64.csv,proxy_total_algae_gDW_m3,gDW/m3,Independent biomass proxy field_chla_ugL/10,frozen input or reference
+biomass_surface_2022_64.csv,aggregation_offswitch_biomass_gDW_m3,gDW/m3,Frozen biomass before the additional depth-retention surface expression,frozen input or reference
+biomass_surface_2022_64.csv,shallow_retention_max3_biomass_gDW_m3,gDW/m3,Adopted additional depth-retention surface biomass expression,frozen input or reference
+biomass_surface_2022_64.csv,depth_m,m,Frozen station-neighborhood water depth,frozen input or reference
+biomass_surface_2022_64.csv,depthavg_vector_speed_mps,m/s,Magnitude of the frozen depth-averaged velocity vector,frozen input or reference
+biomass_surface_2022_64.csv,depth_gate,dimensionless,Shallow-water factor in the adopted surface operator,frozen input or reference
+biomass_surface_2022_64.csv,retention_gate,dimensionless,Weak-flow retention factor in the adopted surface operator,frozen input or reference
+biomass_surface_2022_64.csv,driver_depth_retention,dimensionless,Product of depth_gate and retention_gate,frozen input or reference
+biomass_surface_2022_64.csv,mean_hours_per_grid,h,Original mean retained state hours per mapped grid; not redefined by this release,frozen input or reference
+biomass_surface_2022_64.csv,n_driver_hours,h,Original retained hours used for environmental driver aggregation,frozen input or reference
+biomass_surface_2022_64.csv,aggregation_basis,text,Inherited station-neighborhood and temporal aggregation rule,frozen input or reference
+biomass_surface_2022_64.csv,timestamp_basis,text,Inherited model-state timestamp convention,frozen input or reference
+biomass_surface_2022_64.csv,model_version,identifier,Frozen upstream code-lineage label,frozen input or reference
+biomass_surface_2022_64.csv,parameter_set,identifier,Frozen parameter-set identifier; not retuned in release,frozen input or reference
+biomass_surface_2022_64.csv,scenario,identifier,"Original scenario label, see model_dictionary.json",frozen input or reference
+biomass_surface_2022_64.csv,validation_target,text,Original biomass proxy definition,frozen input or reference
+biomass_surface_2022_64.csv,uses_model_fraction_in_target,boolean,False confirms that the biomass proxy does not contain a model-derived community fraction,frozen input or reference
+biomass_surface_2022_64.csv,vertical_basis,text,Original upstream biomass vertical support; downstream expression is a separate column,frozen input or reference
+biomass_development_and_holdout_181.csv,year,year,Calendar year,frozen input or reference
+biomass_development_and_holdout_181.csv,station_name,identifier,Official sampling station identifier,frozen input or reference
+biomass_development_and_holdout_181.csv,date,YYYY-MM-DD,Station sampling date; inherited original aggregation basis,frozen input or reference
+biomass_development_and_holdout_181.csv,obs,gDW/m3,Observed Chl-a-derived biomass proxy in the 181-row biomass set,frozen input or reference
+biomass_development_and_holdout_181.csv,OE1,gDW/m3,Frozen biomass model state/expression; see model dictionary; *_raw excludes x1.45 observation scale,frozen input or reference
+biomass_development_and_holdout_181.csv,R18E_live,gDW/m3,Frozen biomass model state/expression; see model dictionary; *_raw excludes x1.45 observation scale,frozen input or reference
+biomass_development_and_holdout_181.csv,R18E_surface,gDW/m3,Frozen biomass model state/expression; see model dictionary; *_raw excludes x1.45 observation scale,frozen input or reference
+biomass_development_and_holdout_181.csv,R18_live,gDW/m3,Frozen biomass model state/expression; see model dictionary; *_raw excludes x1.45 observation scale,frozen input or reference
+biomass_development_and_holdout_181.csv,R18_surface,gDW/m3,Frozen biomass model state/expression; see model dictionary; *_raw excludes x1.45 observation scale,frozen input or reference
+biomass_development_and_holdout_181.csv,R18_surface_raw,gDW/m3,Frozen biomass model state/expression; see model dictionary; *_raw excludes x1.45 observation scale,frozen input or reference
+biomass_development_and_holdout_181.csv,R18E_surface_raw,gDW/m3,Frozen biomass model state/expression; see model dictionary; *_raw excludes x1.45 observation scale,frozen input or reference
+biomass_development_and_holdout_181.csv,R18_surface_x145,gDW/m3,Frozen biomass model state/expression; see model dictionary; *_raw excludes x1.45 observation scale,frozen input or reference
+biomass_development_and_holdout_181.csv,R18E_surface_x145,gDW/m3,Frozen biomass model state/expression; see model dictionary; *_raw excludes x1.45 observation scale,frozen input or reference
+biomass_development_and_holdout_181.csv,evaluation_role,category,development (2020-2022) or independent_validation (archived name for frozen 2019 conditional holdout),frozen input or reference
+biomass_development_metrics_reference.csv,model,identifier,"Original model label, see model_dictionary.json",frozen input or reference
+biomass_development_metrics_reference.csv,scale,dimensionless,"Fixed biomass observation scale, selected previously in development",frozen input or reference
+biomass_development_metrics_reference.csv,n,samples,Number of evaluated rows,frozen input or reference
+biomass_development_metrics_reference.csv,geomean_pred_obs,ratio,Archived prediction/observation or dynamic/alternative concentration ratio,frozen input or reference
+biomass_development_metrics_reference.csv,median_pred_obs,ratio,Archived prediction/observation or dynamic/alternative concentration ratio,frozen input or reference
+biomass_development_metrics_reference.csv,log10_MAE,log10 units,"Archived log-error or paired log-error-difference statistic; MC offset 0.01, biomass offset zero",frozen input or reference
+biomass_development_metrics_reference.csv,factor2_fraction,fraction,Archived fraction within factor two or with matching adjacent-date direction,frozen input or reference
+biomass_development_metrics_reference.csv,spearman,dimensionless,Spearman rank correlation using average tied ranks,frozen input or reference
+biomass_development_metrics_reference.csv,direction_agreement,fraction,Archived fraction within factor two or with matching adjacent-date direction,frozen input or reference
+biomass_development_metrics_reference.csv,median_peak_error_days,d,Archived median absolute station peak-date timing error,frozen input or reference
+biomass_development_metrics_reference.csv,scale_role,text,Original archive label or protocol descriptor,frozen input or reference
+biomass_2019_metrics_reference.csv,model,identifier,"Original model label, see model_dictionary.json",frozen input or reference
+biomass_2019_metrics_reference.csv,n,samples,Number of evaluated rows,frozen input or reference
+biomass_2019_metrics_reference.csv,geomean_pred_obs,ratio,Archived prediction/observation or dynamic/alternative concentration ratio,frozen input or reference
+biomass_2019_metrics_reference.csv,log10_MAE,log10 units,"Archived log-error or paired log-error-difference statistic; MC offset 0.01, biomass offset zero",frozen input or reference
+biomass_2019_metrics_reference.csv,spearman,dimensionless,Spearman rank correlation using average tied ranks,frozen input or reference
+biomass_2019_metrics_reference.csv,direction_agreement,fraction,Archived fraction within factor two or with matching adjacent-date direction,frozen input or reference
+biomass_2019_metrics_reference.csv,median_peak_error_days,d,Archived median absolute station peak-date timing error,frozen input or reference
+risk_fpr10_predictions_164.csv,sample_id,identifier,Unique official window|station|date sample key,frozen input or reference
+risk_fpr10_predictions_164.csv,year,year,Calendar year,frozen input or reference
+risk_fpr10_predictions_164.csv,window_id,identifier,Frozen lake simulation window identifier,frozen input or reference
+risk_fpr10_predictions_164.csv,station_name,identifier,Official sampling station identifier,frozen input or reference
+risk_fpr10_predictions_164.csv,date,YYYY-MM-DD,Station sampling date; inherited original aggregation basis,frozen input or reference
+risk_fpr10_predictions_164.csv,surface_LODhalf,ug/L total MC,"Observed surface particulate+dissolved ELISA total MC, nondetects set to LOD/2; official target",frozen input or reference
+risk_fpr10_predictions_164.csv,surface_particulate,ug/L total MC,Observed surface particulate ELISA MC,frozen input or reference
+risk_fpr10_predictions_164.csv,surface_dissolved,ug/L total MC,Observed surface dissolved ELISA MC,frozen input or reference
+risk_fpr10_predictions_164.csv,DYNAMIC_METABOLIC_CAPACITY,ug/L MC-LR process,Unmapped water-column total process concentration for named source scenario,frozen input or reference
+risk_fpr10_predictions_164.csv,I_ugL,ug/L MC-LR process,"Frozen water-column phase concentration; I live intracellular, P dead-algal particulate, D dissolved",frozen input or reference
+risk_fpr10_predictions_164.csv,P_ugL,ug/L MC-LR process,"Frozen water-column phase concentration; I live intracellular, P dead-algal particulate, D dissolved",frozen input or reference
+risk_fpr10_predictions_164.csv,D_ugL,ug/L MC-LR process,"Frozen water-column phase concentration; I live intracellular, P dead-algal particulate, D dissolved",frozen input or reference
+risk_fpr10_predictions_164.csv,depth_m,m,Frozen station-neighborhood water depth,frozen input or reference
+risk_fpr10_predictions_164.csv,depthavg_vector_speed_mps,m/s,Magnitude of the frozen depth-averaged velocity vector,frozen input or reference
+risk_fpr10_predictions_164.csv,depth_gate,dimensionless,Shallow-water factor in the adopted surface operator,frozen input or reference
+risk_fpr10_predictions_164.csv,retention_gate,dimensionless,Weak-flow retention factor in the adopted surface operator,frozen input or reference
+risk_fpr10_predictions_164.csv,driver_depth_retention,dimensionless,Product of depth_gate and retention_gate,frozen input or reference
+risk_fpr10_predictions_164.csv,process_year_percentile,fraction,Frozen within-year rank feature of the process quantity,frozen input or reference
+risk_fpr10_predictions_164.csv,particulate_year_percentile,fraction,Frozen within-year rank feature of the particulate inventory,frozen input or reference
+risk_fpr10_predictions_164.csv,background_loyo_prediction_ugL,ug/L total MC,Same fixed dynamic OLS prediction as the formal background mapping,frozen input or reference
+risk_fpr10_predictions_164.csv,q80_loyo_prediction_ugL,ug/L total MC,Same fixed dynamic q0.80 prediction as the formal alternative mapping,frozen input or reference
+risk_fpr10_predictions_164.csv,risk_probability,probability,Frozen nested-LOYO high-risk classifier probability,frozen input or reference
+risk_fpr10_predictions_164.csv,two_stage_prediction_ugL,ug/L total MC,Frozen fpr10 conditional-tail prediction; separate risk analysis,frozen input or reference
+risk_fpr10_predictions_164.csv,risk_call,boolean,Frozen high-risk classifier call; not equivalent to an arbitrary concentration threshold,frozen input or reference
+risk_fpr10_metrics_reference.csv,model,identifier,"Original model label, see model_dictionary.json",frozen input or reference
+risk_fpr10_metrics_reference.csv,scope,category,all years or one held-out evaluation year,frozen input or reference
+risk_fpr10_metrics_reference.csv,n,samples,Number of evaluated rows,frozen input or reference
+risk_fpr10_metrics_reference.csv,MAE_log10_offset001,log10 units,"Archived log-error or paired log-error-difference statistic; MC offset 0.01, biomass offset zero",frozen input or reference
+risk_fpr10_metrics_reference.csv,prediction_max_ugL,ug/L total MC,Archived summary of observation-mapped predictions,frozen input or reference
+risk_fpr10_metrics_reference.csv,risk_auc,dimensionless,Archived risk-score AUROC; inspect original fpr10 protocol,frozen input or reference
+risk_fpr10_metrics_reference.csv,spearman,dimensionless,Spearman rank correlation using average tied ranks,frozen input or reference
+risk_fpr10_metrics_reference.csv,threshold_ugL,ug/L total MC,"Concentration threshold, inclusive >=",frozen input or reference
+risk_fpr10_metrics_reference.csv,observed_positive,samples,Observed concentrations at or above threshold,frozen input or reference
+risk_fpr10_metrics_reference.csv,predicted_positive,samples,Predicted concentrations at or above threshold,frozen input or reference
+risk_fpr10_metrics_reference.csv,TP,samples,True positive threshold calls,frozen input or reference
+risk_fpr10_metrics_reference.csv,FP,samples,False positive threshold calls,frozen input or reference
+risk_fpr10_metrics_reference.csv,FN,samples,False negative threshold calls,frozen input or reference
+risk_fpr10_metrics_reference.csv,TN,samples,True negative threshold calls,frozen input or reference
+risk_fpr10_metrics_reference.csv,recall,fraction,TP/(TP+FN); missing when no observed positives,frozen input or reference
+risk_fpr10_metrics_reference.csv,PPV,fraction,TP/(TP+FP); missing when no predicted positives,frozen input or reference
+risk_fpr10_selections.csv,holdout_year,year,LOYO held-out evaluation year,frozen input or reference
+risk_fpr10_selections.csv,feature_set,text,Original archive label or protocol descriptor,frozen input or reference
+risk_fpr10_selections.csv,features,text,Original archive label or protocol descriptor,frozen input or reference
+risk_fpr10_selections.csv,l2,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,risk_cutoff,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,inner_f1,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,inner_precision,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,inner_tp,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,inner_fp,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,inner_fn,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,outer_called,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,background_intercept,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,background_slope,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,q80_intercept,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,q80_slope,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,classifier_beta_intercept,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,classifier_beta_process_year_percentile,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,train_mean_process_year_percentile,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,train_sd_process_year_percentile,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,classifier_beta_depth_gate,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,train_mean_depth_gate,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_selections.csv,train_sd_depth_gate,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_inner_candidates.csv,outer_holdout_year,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_inner_candidates.csv,feature_set,text,Original archive label or protocol descriptor,frozen input or reference
+risk_fpr10_inner_candidates.csv,l2,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_inner_candidates.csv,cutoff,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_inner_candidates.csv,inner_f1,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_inner_candidates.csv,inner_precision,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_inner_candidates.csv,inner_recall,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_inner_candidates.csv,inner_fpr,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_inner_candidates.csv,inner_tp,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_inner_candidates.csv,inner_fp,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+risk_fpr10_inner_candidates.csv,inner_fn,protocol-specific; see supporting information,"Archived selection or source-state diagnostic, not newly estimated by release evaluation",archived reference or selection record
+paired_error_differences_reference.csv,model,identifier,"Original model label, see model_dictionary.json",frozen input or reference
+paired_error_differences_reference.csv,mean_difference,log10 units,"Archived log-error or paired log-error-difference statistic; MC offset 0.01, biomass offset zero",frozen input or reference
+paired_error_differences_reference.csv,block95_low,log10 units,"Archived log-error or paired log-error-difference statistic; MC offset 0.01, biomass offset zero",frozen input or reference
+paired_error_differences_reference.csv,block95_high,log10 units,"Archived log-error or paired log-error-difference statistic; MC offset 0.01, biomass offset zero",frozen input or reference
+paired_error_differences_reference.csv,year95_low,log10 units,"Archived log-error or paired log-error-difference statistic; MC offset 0.01, biomass offset zero",frozen input or reference
+paired_error_differences_reference.csv,year95_high,log10 units,"Archived log-error or paired log-error-difference statistic; MC offset 0.01, biomass offset zero",frozen input or reference
+paired_error_differences_reference.csv,n,samples,Number of evaluated rows,frozen input or reference
+stage_similarity_reference.csv,scenario,identifier,"Original scenario label, see model_dictionary.json",frozen input or reference
+stage_similarity_reference.csv,alternative,text,Original archive label or protocol descriptor,frozen input or reference
+stage_similarity_reference.csv,stage,text,Original archive label or protocol descriptor,frozen input or reference
+stage_similarity_reference.csv,n,samples,Number of evaluated rows,frozen input or reference
+stage_similarity_reference.csv,pearson_log,dimensionless,Archived Pearson correlation between log-transformed dynamic and alternative stage values,frozen input or reference
+stage_similarity_reference.csv,centered_log_ratio_sd,log10 units,"Archived log-error or paired log-error-difference statistic; MC offset 0.01, biomass offset zero",frozen input or reference
+stage_similarity_reference.csv,median_dynamic_over_alternative,ratio,Archived prediction/observation or dynamic/alternative concentration ratio,frozen input or reference

@@ -1,0 +1,138 @@
+{
+  "schema_status": "VERIFIED_ARCHIVED_TABLE_AND_QUERY_MODULE",
+  "public_name": "precomputed_metabolic_response",
+  "source_sha256": "c68f04181b4825ce6dae1781d5c7b88e426d2945f1566fdd50468ede1942178d",
+  "rows": 7555,
+  "columns": [
+    "env_id",
+    "temp_C",
+    "light_Wm2",
+    "DIN_mgN_L",
+    "DIP_mgP_L",
+    "rho_growth_commitment",
+    "mu_max_h",
+    "mu_committed_h",
+    "toxin_capacity_upper_per_gDW_h",
+    "mu_toxin_solution_h",
+    "growth_constraint_target_raw",
+    "biomass_flux_toxin_solution_raw",
+    "growth_constraint_residual_raw",
+    "growth_constraint_mode",
+    "toxin_solution_status",
+    "response_mode"
+  ],
+  "environment_nodes": 865,
+  "rho_values": [
+    0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95,
+    0.99,
+    1.0
+  ],
+  "support_min_max": {
+    "temp_C": [
+      23.75,
+      25.65
+    ],
+    "light_Wm2": [
+      0.0,
+      947.35
+    ],
+    "DIN_mgN_L": [
+      0.0532,
+      0.88178
+    ],
+    "DIP_mgP_L": [
+      0.00194,
+      0.00473
+    ],
+    "rho_growth_commitment": [
+      0.0,
+      1.0
+    ]
+  },
+  "growth_constraint_modes": {
+    "equality": 7555
+  },
+  "solver_status_counts": {
+    "optimal": 7555
+  },
+  "coordinate_tuple_duplicates": 0,
+  "support_topology": "Irregular support; marginal min/max values do not establish a full Cartesian grid or universal domain coverage.",
+  "units": {
+    "temp_C": "degree_Celsius",
+    "light_Wm2": "W m^-2",
+    "DIN_mgN_L": "mg N L^-1",
+    "DIP_mgP_L": "mg P L^-1",
+    "rho_growth_commitment": "dimensionless",
+    "mu_max_h": "h^-1",
+    "mu_committed_h": "h^-1",
+    "mu_toxin_solution_h": "h^-1",
+    "toxin_capacity_upper_per_gDW_h": "mmol MC-LR gDW^-1 h^-1",
+    "growth_constraint_target_raw": "original biomass-reaction flux; multiply by 1000 to express the archived growth rate in h^-1",
+    "biomass_flux_toxin_solution_raw": "same raw biomass-reaction flux basis",
+    "growth_constraint_residual_raw": "same raw biomass-reaction flux basis"
+  },
+  "required_lookup_metadata": [
+    "Exact preprocessing, coordinate scaling, interpolation/neighbour selection and out-of-support behavior from the adopted implementation.",
+    "Cache-key rounding and query-order identity; record the 2022 recovered-cache exception.",
+    "Never silently regenerate responses using a model file, switch response lineage, extrapolate with new rules, or replace table coverage with marginal ranges."
+  ],
+  "upstream_reconstruction_in_public_package": false,
+  "file": "metabolic_response.csv.gz",
+  "upstream_model_public": false,
+  "query_implementation": {
+    "module": "lake_mc.response.surface",
+    "historical_class_name": "ResponseSurfaceV16",
+    "source_file_basename": "v16_3_algal_state_model.py",
+    "source_file_sha256": "8b9cceb51758a4552a0ee93ce4e4585e4b80fcdd629b9dce9171f7632b056336",
+    "extracted_nodes": [
+      "first_col",
+      "canonicalize",
+      "RESPONSE_COLUMNS",
+      "ResponseSurfaceV16"
+    ],
+    "extracted_source_sha256": "06ab5862cd7ceb9220a52b2b6dd03f27d1bb237e2d38fd23777e745bd62cff3a",
+    "changes": [
+      "Isolated imports and a three-field ResponseConfig; changed the cfg type annotation only.",
+      "No response-query arithmetic, sorting, coordinate scaling, clipping, selection, weighting, cache or fallback logic changed."
+    ],
+    "backend_requirement_for_archived_regression": "SciPy cKDTree. The original NumPy fallback is retained and has separately archived test expectations.",
+    "known_replay_dependency": "Cache entries retain the first full-precision query for a rounded key. Exact historical lake replay requires query order and recovered 2022 cache identity; a cold-cache reordering is not declared equivalent."
+  },
+  "field_descriptions": {
+    "env_id": "Producer environment identifier. Lookup deduplicates and assigns deterministic V16ENV identifiers, which differ from these source labels.",
+    "temp_C": "Recorded water-temperature query coordinate; not evidence of a Q10 rescaling in the upstream LP.",
+    "light_Wm2": "Light environment coordinate.",
+    "DIN_mgN_L": "Dissolved inorganic nitrogen coordinate.",
+    "DIP_mgP_L": "Dissolved inorganic phosphorus coordinate.",
+    "rho_growth_commitment": "Fraction of maximum biomass flux fixed by an equality during the toxin-capacity solution.",
+    "mu_max_h": "Maximum growth rate on the archived h^-1 basis.",
+    "mu_committed_h": "Committed growth rate on the archived h^-1 basis.",
+    "toxin_capacity_upper_per_gDW_h": "MC-LR capacity in mmol gDW^-1 h^-1. This column is not multiplied by 1000.",
+    "mu_toxin_solution_h": "Biomass rate in the toxin-capacity solution on the archived h^-1 basis.",
+    "growth_constraint_target_raw": "Biomass equality target in raw flux units; times 1000 gives h^-1.",
+    "biomass_flux_toxin_solution_raw": "Raw biomass flux in the toxin-capacity solution; times 1000 gives h^-1.",
+    "growth_constraint_residual_raw": "Signed raw-flux residual relative to the biomass equality target.",
+    "growth_constraint_mode": "Reported biomass-constraint mode; equality in every formal row.",
+    "toxin_solution_status": "Reported optimization status; optimal in every formal row.",
+    "response_mode": "Producer lineage label retained in the unchanged source table."
+  }
+}

@@ -1,0 +1,258 @@
+[
+  {
+    "path": "configs/frozen_ecology.json",
+    "bytes": 5935,
+    "sha256": "e373878168ab6b8f1413ceb1377ca4cc6c1b581eba0f9a38136f4310e24578b7",
+    "source_sha256": "e373878168ab6b8f1413ceb1377ca4cc6c1b581eba0f9a38136f4310e24578b7",
+    "transform": "metadata path normalization only",
+    "role": "ecology_config"
+  },
+  {
+    "path": "data/grid_contracts/wet_grid_contract.csv",
+    "bytes": 2008510,
+    "sha256": "99c82184b846c72b4ebadc00b3a80c5b27837293d12f72528d47a55670bd43ed",
+    "source_sha256": "99c82184b846c72b4ebadc00b3a80c5b27837293d12f72528d47a55670bd43ed",
+    "transform": "byte-for-byte copy",
+    "role": "grid_contract"
+  },
+  {
+    "path": "data/grid_contracts/edge_domain_contract.csv",
+    "bytes": 4314952,
+    "sha256": "381bfad48c7af299ee0667f40338c233e1d1f93f47f68f8e53a9dfd155e209d1",
+    "source_sha256": "381bfad48c7af299ee0667f40338c233e1d1f93f47f68f8e53a9dfd155e209d1",
+    "transform": "byte-for-byte copy",
+    "role": "grid_contract"
+  },
+  {
+    "path": "data/grid_contracts/station_map_wet_2019.csv",
+    "bytes": 17839,
+    "sha256": "4c14e790b61648af598fb52cf8a72f41f2c1a349d36a3884308252367187f38b",
+    "source_sha256": "4c14e790b61648af598fb52cf8a72f41f2c1a349d36a3884308252367187f38b",
+    "transform": "byte-for-byte copy",
+    "role": "grid_contract"
+  },
+  {
+    "path": "data/grid_contracts/station_map_wet_2020.csv",
+    "bytes": 17839,
+    "sha256": "4c14e790b61648af598fb52cf8a72f41f2c1a349d36a3884308252367187f38b",
+    "source_sha256": "4c14e790b61648af598fb52cf8a72f41f2c1a349d36a3884308252367187f38b",
+    "transform": "byte-for-byte copy",
+    "role": "grid_contract"
+  },
+  {
+    "path": "data/grid_contracts/station_map_wet_2021.csv",
+    "bytes": 17839,
+    "sha256": "4c14e790b61648af598fb52cf8a72f41f2c1a349d36a3884308252367187f38b",
+    "source_sha256": "4c14e790b61648af598fb52cf8a72f41f2c1a349d36a3884308252367187f38b",
+    "transform": "byte-for-byte copy",
+    "role": "grid_contract"
+  },
+  {
+    "path": "data/grid_contracts/station_map_wet_2022.csv",
+    "bytes": 17839,
+    "sha256": "4c14e790b61648af598fb52cf8a72f41f2c1a349d36a3884308252367187f38b",
+    "source_sha256": "4c14e790b61648af598fb52cf8a72f41f2c1a349d36a3884308252367187f38b",
+    "transform": "byte-for-byte copy",
+    "role": "grid_contract"
+  },
+  {
+    "path": "provenance/process_identity/repair_protocol.json",
+    "bytes": 7503,
+    "sha256": "1702d11441390842db99e2c86d24d3a69b9fcff5441210467036b76008803eb0",
+    "source_sha256": "1702d11441390842db99e2c86d24d3a69b9fcff5441210467036b76008803eb0",
+    "transform": "metadata path normalization only",
+    "role": "process_identity"
+  },
+  {
+    "path": "provenance/process_identity/2019/input_identity.json",
+    "bytes": 60802,
+    "sha256": "8bbdacbf78300dda6c5ab2eb6409e8f4289561d2d8752bf0cb8fc9b50be7b67f",
+    "source_sha256": "964a5764f3217b50da5564dbd4152ff348558c18b90c0ba809c9975dc2462ab1",
+    "transform": "metadata path normalization only",
+    "role": "process_identity"
+  },
+  {
+    "path": "provenance/process_identity/2020/input_identity.json",
+    "bytes": 60802,
+    "sha256": "44ff960f6fd1f171c7ac61f735a03374dac2b934f14d3e2ce39508ef1eecf99d",
+    "source_sha256": "515fc909fb9b6440be180b3a36f94d3571f2b6b01e5ac6e240626a93778924b6",
+    "transform": "metadata path normalization only",
+    "role": "process_identity"
+  },
+  {
+    "path": "provenance/process_identity/2021/input_identity.json",
+    "bytes": 60802,
+    "sha256": "7ae070bf1fe8a37b1b4db3097cf3215ab4ed89e71dc2530d42858f02fd8af89b",
+    "source_sha256": "15504e644b61da03dc24768e0969ae3e391cf8bb5f3bb49a0e5647e71cdb10fd",
+    "transform": "metadata path normalization only",
+    "role": "process_identity"
+  },
+  {
+    "path": "provenance/process_identity/2022/input_identity.json",
+    "bytes": 60700,
+    "sha256": "ad606223a5c1482c5271768d82aeb056ab373bb303710dec32eed343992be52c",
+    "source_sha256": "96677079da3513433a081297b47461ebe3ddf6fd4db3e59a2bb8a538976628ce",
+    "transform": "metadata path normalization only",
+    "role": "process_identity"
+  },
+  {
+    "path": "artwork/approved/Figure1.png",
+    "bytes": 350362,
+    "sha256": "b88557af1ba9ac9ea19fa5d4f8a52ac5102b24923650abe8c036d0f63ee8f31f",
+    "source_sha256": "b88557af1ba9ac9ea19fa5d4f8a52ac5102b24923650abe8c036d0f63ee8f31f",
+    "transform": "byte-for-byte copy",
+    "role": "figure_asset"
+  },
+  {
+    "path": "artwork/approved/Figure2.png",
+    "bytes": 1562665,
+    "sha256": "ae10c00e4f73ddcac19d5384e50b90bc5ac93b55a18f27bf316d4cab19e02551",
+    "source_sha256": "ae10c00e4f73ddcac19d5384e50b90bc5ac93b55a18f27bf316d4cab19e02551",
+    "transform": "byte-for-byte copy",
+    "role": "figure_asset"
+  },
+  {
+    "path": "artwork/approved/Figure3.png",
+    "bytes": 1369060,
+    "sha256": "d3189327464b22986b97d5b90b13f8a05ce318a57d725565c7637c21cd243491",
+    "source_sha256": "d3189327464b22986b97d5b90b13f8a05ce318a57d725565c7637c21cd243491",
+    "transform": "byte-for-byte copy",
+    "role": "figure_asset"
+  },
+  {
+    "path": "artwork/approved/Figure4.png",
+    "bytes": 1265889,
+    "sha256": "33dfaa8d4ee8b2216fbf9b5d6d666223745a6f124e2a5ccbcf698a3c63c63a91",
+    "source_sha256": "33dfaa8d4ee8b2216fbf9b5d6d666223745a6f124e2a5ccbcf698a3c63c63a91",
+    "transform": "byte-for-byte copy",
+    "role": "figure_asset"
+  },
+  {
+    "path": "artwork/approved/FigureS6_1.png",
+    "bytes": 2208365,
+    "sha256": "d4b30040bfbf19af748d708458f8722f103037c5b2f959c20ba017c1d28bcfd9",
+    "source_sha256": "d4b30040bfbf19af748d708458f8722f103037c5b2f959c20ba017c1d28bcfd9",
+    "transform": "byte-for-byte copy",
+    "role": "figure_asset"
+  },
+  {
+    "path": "artwork/approved/FigureS6_2.png",
+    "bytes": 2210249,
+    "sha256": "1f2777dc32039dd1028b9c4971d401dd189ae96bc81004be096cdfecbae6466b",
+    "source_sha256": "1f2777dc32039dd1028b9c4971d401dd189ae96bc81004be096cdfecbae6466b",
+    "transform": "byte-for-byte copy",
+    "role": "figure_asset"
+  },
+  {
+    "path": "artwork/approved/figure_layout_audit.json",
+    "bytes": 9588,
+    "sha256": "7f29bec5eda9ddd43589a1b32d3f8f9952d0e4133595a64cd5c07028f8cef0f2",
+    "source_sha256": "7f29bec5eda9ddd43589a1b32d3f8f9952d0e4133595a64cd5c07028f8cef0f2",
+    "transform": "metadata path normalization only",
+    "role": "figure_asset"
+  },
+  {
+    "path": "data/figure4/paired_concentration_maps_2019.csv.gz",
+    "bytes": 1339812,
+    "sha256": "026eef484001bc448f8823c4a9a8ce39ad586118812e1b8966fa2b7975df6d7e",
+    "source_sha256": "026eef484001bc448f8823c4a9a8ce39ad586118812e1b8966fa2b7975df6d7e",
+    "transform": "byte-for-byte copy",
+    "role": "figure_data"
+  },
+  {
+    "path": "data/figure4/selected_grid_states_2019.csv.gz",
+    "bytes": 1305195,
+    "sha256": "b67468bda8d1051c9480f2d69abe3cfa236f475b1a99560a7f1cd7dfce8787d2",
+    "source_sha256": "b67468bda8d1051c9480f2d69abe3cfa236f475b1a99560a7f1cd7dfce8787d2",
+    "transform": "byte-for-byte copy",
+    "role": "figure_data"
+  },
+  {
+    "path": "data/figure4/selected_time_nodes_2019.csv",
+    "bytes": 837,
+    "sha256": "684fd46ef942c72f93d76b25a804bb83ebb300ae80328e3ec5164f52b5847d5b",
+    "source_sha256": "684fd46ef942c72f93d76b25a804bb83ebb300ae80328e3ec5164f52b5847d5b",
+    "transform": "byte-for-byte copy",
+    "role": "figure_data"
+  },
+  {
+    "path": "docs/figure_style.md",
+    "bytes": 7122,
+    "sha256": "d41843447dea83e70c95bda2002a453df56d9889283c5c1e34bc5275697144ec",
+    "source_sha256": "474ea4fe39ec9f14c74401f8404412a2f1ebcb04450cb4811642116169b603c6",
+    "transform": "metadata path normalization only",
+    "role": "figure style"
+  },
+  {
+    "path": "docs/hydrodynamic_lineage.md",
+    "bytes": 3049,
+    "sha256": "612473e90c885976188006feb93383702540c4f5355347491c91797ed6d25ee4",
+    "source_sha256": "30330abc1fcb66d214560edcf5e3d2f05731733c390409664c7a5d5f10839249",
+    "transform": "metadata path normalization only",
+    "role": "hydrodynamic provenance"
+  },
+  {
+    "path": "manifests/response_inventory.json",
+    "bytes": 2728,
+    "sha256": "59293c2e67284d28cb0a263ec5c7897bb7a4f1be3fa8da22112831d100d65e34",
+    "source_sha256": "59293c2e67284d28cb0a263ec5c7897bb7a4f1be3fa8da22112831d100d65e34",
+    "transform": "metadata path normalization only",
+    "role": "response identity"
+  },
+  {
+    "path": "data/paper_diagnostics/current_stage_similarity_164.csv",
+    "bytes": 2135,
+    "sha256": "29ac53724f8613f22887b607a31c2ac99047979fafc8cca4d10a6bd8c954fe4b",
+    "source_sha256": "29ac53724f8613f22887b607a31c2ac99047979fafc8cca4d10a6bd8c954fe4b",
+    "transform": "byte-for-byte copy",
+    "role": "frozen paper diagnostic"
+  },
+  {
+    "path": "data/paper_diagnostics/current_phase_fraction_summary.csv",
+    "bytes": 497,
+    "sha256": "cfec9dd481773d3a4c82a51c2803bd513dd276f50c0f3a9d382ebfade316fbf3",
+    "source_sha256": "cfec9dd481773d3a4c82a51c2803bd513dd276f50c0f3a9d382ebfade316fbf3",
+    "transform": "byte-for-byte copy",
+    "role": "frozen paper diagnostic"
+  },
+  {
+    "path": "data/paper_diagnostics/current_raw_process_distribution.csv",
+    "bytes": 561,
+    "sha256": "1ea121855177350e058c4d9a5ef734457ea4ebaf3e8ffad45ba3a4cc5102f121",
+    "source_sha256": "1ea121855177350e058c4d9a5ef734457ea4ebaf3e8ffad45ba3a4cc5102f121",
+    "transform": "byte-for-byte copy",
+    "role": "frozen paper diagnostic"
+  },
+  {
+    "path": "data/paper_diagnostics/current_S9_paired_error_differences.csv",
+    "bytes": 855,
+    "sha256": "842ba8b072a838cfcb1722f440a7833279459ba3f6312e52d3544768da902676",
+    "source_sha256": "842ba8b072a838cfcb1722f440a7833279459ba3f6312e52d3544768da902676",
+    "transform": "byte-for-byte copy",
+    "role": "frozen paper diagnostic"
+  },
+  {
+    "path": "data/paper_diagnostics/fold_identity.csv",
+    "bytes": 4745,
+    "sha256": "e77d0c5490858124fd8491cc334e22865c807754df0ab97c986ffd3d683c7f5c",
+    "source_sha256": "e77d0c5490858124fd8491cc334e22865c807754df0ab97c986ffd3d683c7f5c",
+    "transform": "byte-for-byte copy",
+    "role": "frozen paper diagnostic"
+  },
+  {
+    "path": "data/paper_diagnostics/current_stratified_verified.csv",
+    "bytes": 4714,
+    "sha256": "9b12dcd09abbbb955d286c6b4913fd0ce36359049126fa9b7d5906b81e931255",
+    "source_sha256": "9b12dcd09abbbb955d286c6b4913fd0ce36359049126fa9b7d5906b81e931255",
+    "transform": "byte-for-byte copy",
+    "role": "frozen paper diagnostic"
+  },
+  {
+    "path": "data/paper_diagnostics/current_mapping_coefficient_intervals.csv",
+    "bytes": 1822,
+    "sha256": "722b8f764cc6cedfded42314cc1f0f34aa33a7674a29b1926f9f09fee246c0d7",
+    "source_sha256": "722b8f764cc6cedfded42314cc1f0f34aa33a7674a29b1926f9f09fee246c0d7",
+    "transform": "byte-for-byte copy",
+    "role": "frozen paper diagnostic"
+  }
+]

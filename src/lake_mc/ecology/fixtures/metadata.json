@@ -1,0 +1,13 @@
+{
+  "scope": "16-hour or shorter single-grid arithmetic regression from retained real driver and initial profile; no full-lake model run or fit",
+  "year": 2020,
+  "grid_id": "G000000",
+  "hours": 16,
+  "lookup_queries": 16,
+  "driver_source": "stable_cache/window_inputs/2020_primary_validation_20200720_20200818/lake_driver_grid_hourly_with_leofs_flow.csv",
+  "initial_source": "stable_cache/window_inputs/2020_primary_validation_20200720_20200818/initial_state_snapshot_from_profiles.csv",
+  "response_sha256": "c68f04181b4825ce6dae1781d5c7b88e426d2945f1566fdd50468ede1942178d",
+  "maximum_state_difference": 0.0,
+  "full_lake_trajectory_equivalence_tested": false,
+  "private_model_loaded": false
+}

@@ -1,0 +1,33 @@
+{
+  "commands": [
+    {
+      "command": "verify_assets.py",
+      "returncode": 0
+    },
+    {
+      "command": "validate_response.py",
+      "returncode": 0
+    },
+    {
+      "command": "reproduce_metrics.py",
+      "returncode": 0
+    },
+    {
+      "command": "reproduce_figures.py",
+      "returncode": 0
+    }
+  ],
+  "tests_run": 20,
+  "unexpected_failures": 0,
+  "errors": 0,
+  "known_expected_failures": 1,
+  "unexpected_successes": 0,
+  "archive_reproduction_success": true,
+  "strict_source_constraint_certified": false,
+  "numpy": "2.3.5",
+  "pandas": "3.0.1",
+  "scipy": "1.15.3",
+  "upstream_lp_runs": 0,
+  "ecology_recomputations": 0,
+  "fits": 0
+}

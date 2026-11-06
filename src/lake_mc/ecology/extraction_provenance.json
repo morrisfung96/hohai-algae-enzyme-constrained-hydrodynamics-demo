@@ -1,0 +1,149 @@
+{
+  "records": [
+    {
+      "source": "scripts/v16_3_conservative_production_allocation.py",
+      "source_sha256": "48286994ef3415dccc9d968bd631d99a2457d791a1fac3f036fa50bdc382c785",
+      "target": "src/lake_mc/ecology/production.py",
+      "definitions": [
+        "ProjectionResult",
+        "_finite_nonnegative",
+        "project_two_species_conservative_production"
+      ],
+      "segments": [
+        {
+          "start": 33,
+          "end": 50
+        },
+        {
+          "start": 53,
+          "end": 62
+        },
+        {
+          "start": 65,
+          "end": 183
+        }
+      ],
+      "algorithm_change": false
+    },
+    {
+      "source": "V16_3_pipeline/v16_3_algal_state_model.py",
+      "source_sha256": "8b9cceb51758a4552a0ee93ce4e4585e4b80fcdd629b9dce9171f7632b056336",
+      "target": "src/lake_mc/ecology/config.py",
+      "definitions": [
+        "MC_LR_MW_G_MOL",
+        "V16Config"
+      ],
+      "segments": [
+        {
+          "start": 50,
+          "end": 50
+        },
+        {
+          "start": 154,
+          "end": 388
+        }
+      ],
+      "algorithm_change": false
+    },
+    {
+      "source": "scripts/engine_R18_stateful_capacity_candidate.py",
+      "source_sha256": "fc9dcfdbedef80f1b6d4cc4a001abb836c4755fed975238a3b512a300821fffb",
+      "target": "src/lake_mc/ecology/state.py",
+      "definitions": [
+        "ACCUM_COLS",
+        "EPS",
+        "basin_from_lon",
+        "new_daily_accum",
+        "phase_from_date",
+        "rows_from_accums",
+        "safe_div",
+        "sat",
+        "sigmoid",
+        "simulate_grid_coupled_generator",
+        "state_from_initial",
+        "temp_suitability",
+        "update_daily_accum",
+        "zero_accum"
+      ],
+      "segments": [
+        {
+          "start": 43,
+          "end": 43
+        },
+        {
+          "start": 453,
+          "end": 456
+        },
+        {
+          "start": 459,
+          "end": 462
+        },
+        {
+          "start": 465,
+          "end": 468
+        },
+        {
+          "start": 471,
+          "end": 473
+        },
+        {
+          "start": 476,
+          "end": 490
+        },
+        {
+          "start": 493,
+          "end": 500
+        },
+        {
+          "start": 503,
+          "end": 605
+        },
+        {
+          "start": 608,
+          "end": 609
+        },
+        {
+          "start": 612,
+          "end": 640
+        },
+        {
+          "start": 643,
+          "end": 646
+        },
+        {
+          "start": 649,
+          "end": 793
+        },
+        {
+          "start": 796,
+          "end": 808
+        },
+        {
+          "start": 811,
+          "end": 1654
+        }
+      ],
+      "algorithm_change": false
+    }
+  ],
+  "scenario": {
+    "allocation_mode": "conservative_projected_phi_allocation",
+    "phi_M_mode": "current_times_active",
+    "phi_O_mode": "bottleneck",
+    "gamma_inventory": 1.0,
+    "other_capacity_mode": "env_power_existing_biomass",
+    "other_capacity_env_power": 0.75,
+    "other_capacity_recruitable_fraction": 0.0,
+    "status": "valid",
+    "complexity_rank": 1,
+    "description": "Partial release of other hard-capacity environmental double gating: env_single^0.75.",
+    "dynamic_capacity_enabled": true,
+    "dynamic_capacity_floor_fraction": 0.5,
+    "dynamic_capacity_tau_h": 72.0,
+    "dynamic_excess_tau_h": 72.0
+  },
+  "config_source": "run_output/V16_3_B_inactivation_D3_2022/2022_double_bloom_20220706_20220823/D3_3B_clear0p15_microK0p40d/config.json",
+  "config_sha256": "e373878168ab6b8f1413ceb1377ca4cc6c1b581eba0f9a38136f4310e24578b7",
+  "scientific_scope": "Exact source arithmetic; not proof of fresh full-lake trajectory equivalence.",
+  "private_FACHB905_or_LP_dependency": false
+}

@@ -1,0 +1,615 @@
+{
+  "scope": "Verified frozen-state demo artifact inventory",
+  "files": [
+    {
+      "path": ".github/workflows/reproduce.yml",
+      "bytes": 703,
+      "sha256": "a7203e0c4cf2c19a176f7c62045fbf6873d050885351c329a844f2dac44c845a"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 132,
+      "sha256": "cf692c41f80daa452483331375277193f657787ca175d2bcdad7fc92f06a956f"
+    },
+    {
+      "path": "artwork/approved/Figure1.png",
+      "bytes": 350362,
+      "sha256": "b88557af1ba9ac9ea19fa5d4f8a52ac5102b24923650abe8c036d0f63ee8f31f"
+    },
+    {
+      "path": "artwork/approved/Figure2.png",
+      "bytes": 1562665,
+      "sha256": "ae10c00e4f73ddcac19d5384e50b90bc5ac93b55a18f27bf316d4cab19e02551"
+    },
+    {
+      "path": "artwork/approved/Figure3.png",
+      "bytes": 1369060,
+      "sha256": "d3189327464b22986b97d5b90b13f8a05ce318a57d725565c7637c21cd243491"
+    },
+    {
+      "path": "artwork/approved/Figure4.png",
+      "bytes": 1265889,
+      "sha256": "33dfaa8d4ee8b2216fbf9b5d6d666223745a6f124e2a5ccbcf698a3c63c63a91"
+    },
+    {
+      "path": "artwork/approved/figure_layout_audit.json",
+      "bytes": 9588,
+      "sha256": "7f29bec5eda9ddd43589a1b32d3f8f9952d0e4133595a64cd5c07028f8cef0f2"
+    },
+    {
+      "path": "artwork/approved/FigureS6_1.png",
+      "bytes": 2208365,
+      "sha256": "d4b30040bfbf19af748d708458f8722f103037c5b2f959c20ba017c1d28bcfd9"
+    },
+    {
+      "path": "artwork/approved/FigureS6_2.png",
+      "bytes": 2210249,
+      "sha256": "1f2777dc32039dd1028b9c4971d401dd189ae96bc81004be096cdfecbae6466b"
+    },
+    {
+      "path": "configs/frozen_ecology.json",
+      "bytes": 5935,
+      "sha256": "e373878168ab6b8f1413ceb1377ca4cc6c1b581eba0f9a38136f4310e24578b7"
+    },
+    {
+      "path": "data/figure4/paired_concentration_maps_2019.csv.gz",
+      "bytes": 1339812,
+      "sha256": "026eef484001bc448f8823c4a9a8ce39ad586118812e1b8966fa2b7975df6d7e"
+    },
+    {
+      "path": "data/figure4/selected_grid_states_2019.csv.gz",
+      "bytes": 1305195,
+      "sha256": "b67468bda8d1051c9480f2d69abe3cfa236f475b1a99560a7f1cd7dfce8787d2"
+    },
+    {
+      "path": "data/figure4/selected_time_nodes_2019.csv",
+      "bytes": 837,
+      "sha256": "684fd46ef942c72f93d76b25a804bb83ebb300ae80328e3ec5164f52b5847d5b"
+    },
+    {
+      "path": "data/frozen_evaluation/biomass_2019_metrics_reference.csv",
+      "bytes": 683,
+      "sha256": "6cbdbc04f73af9e5926c54bcd3f9387b4ccf814c5ccaf6540ea9fb561d7b3514"
+    },
+    {
+      "path": "data/frozen_evaluation/biomass_development_and_holdout_181.csv",
+      "bytes": 36513,
+      "sha256": "004a96c26222465a442b08146553fa2675ee21dc2f347d6ce991afa77eba5373"
+    },
+    {
+      "path": "data/frozen_evaluation/biomass_development_metrics_reference.csv",
+      "bytes": 464,
+      "sha256": "5b5fe278b4b54fbba73c8a702089d0147d2445134d6d2164122c0d7357cb6203"
+    },
+    {
+      "path": "data/frozen_evaluation/biomass_surface_2022_64.csv",
+      "bytes": 26629,
+      "sha256": "3190e87f4fafc6d0957e2e6f85aa917aa8b7eb6c464311033fb363ec043bd148"
+    },
+    {
+      "path": "data/frozen_evaluation/column_dictionary.csv",
+      "bytes": 45838,
+      "sha256": "db005a866404377f67ca831abc67f29592a7f6fbfce7f9d4002a7f2fa396388f"
+    },
+    {
+      "path": "data/frozen_evaluation/common_predictions_164.csv",
+      "bytes": 29453,
+      "sha256": "f66f39f48402dc129079bd6d91bb57a61cf4e97581b9514bb2c8bafbec851da5"
+    },
+    {
+      "path": "data/frozen_evaluation/formal_loyo_parameters.csv",
+      "bytes": 1991,
+      "sha256": "c30d0f833ed10b3a9af96a24547bc9a160fdc464791686f2efcbe70d8ccafaad"
+    },
+    {
+      "path": "data/frozen_evaluation/formal_metrics_reference.csv",
+      "bytes": 41714,
+      "sha256": "e0de3dfd4a2bb60df5e377a2b10a7811da26271b712431441defde22584da40d"
+    },
+    {
+      "path": "data/frozen_evaluation/formal_predictions_164.csv",
+      "bytes": 119028,
+      "sha256": "f1cd0d05d106bb3fc2c4ff8a838e7e16229f375d500848c85753843f5cb2221a"
+    },
+    {
+      "path": "data/frozen_evaluation/mapping_intervals_12.csv",
+      "bytes": 1835,
+      "sha256": "dd63b94322afb53c67f3071f17f5c3c0320bdc67d5aa89485c38955cb9ff0c30"
+    },
+    {
+      "path": "data/frozen_evaluation/model_dictionary.json",
+      "bytes": 3183,
+      "sha256": "5ac49ab1919bb8df85a36025336ea9729555cc6fc1fab60f3592ec0bf577fa15"
+    },
+    {
+      "path": "data/frozen_evaluation/paired_error_differences_reference.csv",
+      "bytes": 855,
+      "sha256": "842ba8b072a838cfcb1722f440a7833279459ba3f6312e52d3544768da902676"
+    },
+    {
+      "path": "data/frozen_evaluation/provenance.json",
+      "bytes": 16603,
+      "sha256": "e85fc4bfaee1a2cb7e27755330397336cc952aa9b8b3927cb399b61e5ddc9a52"
+    },
+    {
+      "path": "data/frozen_evaluation/README.txt",
+      "bytes": 3472,
+      "sha256": "31057d336d460c1f69b5cf93ae635cacf3bf67087467fcfde5fdf2f78cdd6f2e"
+    },
+    {
+      "path": "data/frozen_evaluation/risk_fpr10_inner_candidates.csv",
+      "bytes": 3872,
+      "sha256": "38c4ffc4fb6ea22f0c934db3b10d51abffb43a08765008856fd99965b3fc2b67"
+    },
+    {
+      "path": "data/frozen_evaluation/risk_fpr10_metrics_reference.csv",
+      "bytes": 7773,
+      "sha256": "762470a46398e630f2d8fc5b43898bb45abf34372aae64c31ff3415176be17f1"
+    },
+    {
+      "path": "data/frozen_evaluation/risk_fpr10_predictions_164.csv",
+      "bytes": 66844,
+      "sha256": "6a3defc31bb94460892c4ce42aad3ed38e1c5b54e295b40ee76dd2de3bd5fa32"
+    },
+    {
+      "path": "data/frozen_evaluation/risk_fpr10_selections.csv",
+      "bytes": 1568,
+      "sha256": "4408dddc8241db700ab4bded96d9f8b9294d40eb2f567ad6f738db15a126a8ea"
+    },
+    {
+      "path": "data/frozen_evaluation/stage_similarity_reference.csv",
+      "bytes": 2135,
+      "sha256": "29ac53724f8613f22887b607a31c2ac99047979fafc8cca4d10a6bd8c954fe4b"
+    },
+    {
+      "path": "data/frozen_evaluation/stratification_variables_124.csv",
+      "bytes": 44501,
+      "sha256": "f72b62ca8313ccc4037b7a0af39dcd463f4739e5a307d4112aef1ffb8a83e25c"
+    },
+    {
+      "path": "data/frozen_evaluation/stratified_differences_reference.csv",
+      "bytes": 5326,
+      "sha256": "65c53af7d5d38ff1ec9c4f8fe4fe5e43970081021260cfe329e157a688f4fc45"
+    },
+    {
+      "path": "data/frozen_evaluation/stratified_metrics_reference.csv",
+      "bytes": 3744,
+      "sha256": "4a40c831344f7071d3a2a86eed81ce6eb2ff8c194432e0ce21fb13a387b7eb92"
+    },
+    {
+      "path": "data/frozen_evaluation/target_and_process_features_164.csv",
+      "bytes": 64192,
+      "sha256": "9732b9722b143b61605fb02a70ae08cc6841f6a205f7a1ff4861761cf622bf2a"
+    },
+    {
+      "path": "data/grid_contracts/edge_domain_contract.csv",
+      "bytes": 4314952,
+      "sha256": "381bfad48c7af299ee0667f40338c233e1d1f93f47f68f8e53a9dfd155e209d1"
+    },
+    {
+      "path": "data/grid_contracts/station_map_wet_2019.csv",
+      "bytes": 17839,
+      "sha256": "4c14e790b61648af598fb52cf8a72f41f2c1a349d36a3884308252367187f38b"
+    },
+    {
+      "path": "data/grid_contracts/station_map_wet_2020.csv",
+      "bytes": 17839,
+      "sha256": "4c14e790b61648af598fb52cf8a72f41f2c1a349d36a3884308252367187f38b"
+    },
+    {
+      "path": "data/grid_contracts/station_map_wet_2021.csv",
+      "bytes": 17839,
+      "sha256": "4c14e790b61648af598fb52cf8a72f41f2c1a349d36a3884308252367187f38b"
+    },
+    {
+      "path": "data/grid_contracts/station_map_wet_2022.csv",
+      "bytes": 17839,
+      "sha256": "4c14e790b61648af598fb52cf8a72f41f2c1a349d36a3884308252367187f38b"
+    },
+    {
+      "path": "data/grid_contracts/wet_grid_contract.csv",
+      "bytes": 2008510,
+      "sha256": "99c82184b846c72b4ebadc00b3a80c5b27837293d12f72528d47a55670bd43ed"
+    },
+    {
+      "path": "data/metabolic_diagnostics/manifest.json",
+      "bytes": 3181,
+      "sha256": "a84555e3404a2c3b4beb4cd18215da6dc2259fe028fc6750bbc70dccbcca8b88"
+    },
+    {
+      "path": "data/metabolic_diagnostics/metabolic_period_overview.csv",
+      "bytes": 2064,
+      "sha256": "914553a13178d32a5cc551db14a7751cd1f37142baad3633b206378e6e997289"
+    },
+    {
+      "path": "data/metabolic_diagnostics/metabolic_selected_pathways.csv",
+      "bytes": 4420,
+      "sha256": "a9cae313e70fe160f10ff3a2ec0b5dd4cbc57476c70ee69df2273ed4f465bd60"
+    },
+    {
+      "path": "data/metabolic_diagnostics/metabolic_severe_light_diagnostic.csv",
+      "bytes": 916,
+      "sha256": "5fddd6a226c960e2a57b7add450c4045fd0589cd073a3994afea795a482fc958"
+    },
+    {
+      "path": "data/metabolic_diagnostics/README.txt",
+      "bytes": 1562,
+      "sha256": "81b223658f342f50b8be5b496f8060ebcec245d0fbf2628167944cc4dee80766"
+    },
+    {
+      "path": "data/paper_diagnostics/current_mapping_coefficient_intervals.csv",
+      "bytes": 1822,
+      "sha256": "722b8f764cc6cedfded42314cc1f0f34aa33a7674a29b1926f9f09fee246c0d7"
+    },
+    {
+      "path": "data/paper_diagnostics/current_phase_fraction_summary.csv",
+      "bytes": 497,
+      "sha256": "cfec9dd481773d3a4c82a51c2803bd513dd276f50c0f3a9d382ebfade316fbf3"
+    },
+    {
+      "path": "data/paper_diagnostics/current_raw_process_distribution.csv",
+      "bytes": 561,
+      "sha256": "1ea121855177350e058c4d9a5ef734457ea4ebaf3e8ffad45ba3a4cc5102f121"
+    },
+    {
+      "path": "data/paper_diagnostics/current_S9_paired_error_differences.csv",
+      "bytes": 855,
+      "sha256": "842ba8b072a838cfcb1722f440a7833279459ba3f6312e52d3544768da902676"
+    },
+    {
+      "path": "data/paper_diagnostics/current_stage_similarity_164.csv",
+      "bytes": 2135,
+      "sha256": "29ac53724f8613f22887b607a31c2ac99047979fafc8cca4d10a6bd8c954fe4b"
+    },
+    {
+      "path": "data/paper_diagnostics/current_stratified_verified.csv",
+      "bytes": 4714,
+      "sha256": "9b12dcd09abbbb955d286c6b4913fd0ce36359049126fa9b7d5906b81e931255"
+    },
+    {
+      "path": "data/paper_diagnostics/fold_identity.csv",
+      "bytes": 4745,
+      "sha256": "e77d0c5490858124fd8491cc334e22865c807754df0ab97c986ffd3d683c7f5c"
+    },
+    {
+      "path": "data/replay_example/README.txt",
+      "bytes": 1448,
+      "sha256": "28b3e51d79d1da9d88f6edbf4260f0cd548935601661d2331fe76bf4a32a0240"
+    },
+    {
+      "path": "data/replay_example/real_source_pool_steps.json",
+      "bytes": 90379,
+      "sha256": "a8f624e519d218eb5a953b54f530b7cc5e278d43061bc789f006b5f4b51e9e6e"
+    },
+    {
+      "path": "data/replay_example/real_source_pool_steps.npz",
+      "bytes": 262566,
+      "sha256": "146692e0fae35dde2e6ef76d432fdb8ac80c5afaa351136d5a9fd3c56de351b6"
+    },
+    {
+      "path": "data/response/data_dictionary.json",
+      "bytes": 5515,
+      "sha256": "b5a24719bd0f6f13e0e254948a2787119a44436b3e1e8682aa913eeeca668b7e"
+    },
+    {
+      "path": "data/response/metabolic_response.csv.gz",
+      "bytes": 74204,
+      "sha256": "c68f04181b4825ce6dae1781d5c7b88e426d2945f1566fdd50468ede1942178d"
+    },
+    {
+      "path": "data/response/query_regression_cases.json",
+      "bytes": 126234,
+      "sha256": "b661be22d4a8c4aaf9553061452338e6d30ac0b4c41a7cd7aec2ae4a2f324ed6"
+    },
+    {
+      "path": "data/response/README.txt",
+      "bytes": 3679,
+      "sha256": "e2772314685a6b56feb02a895a992f97c2c32303c7b4571415c6e6c913061910"
+    },
+    {
+      "path": "data/response/recovered_worker_cache_2022.csv.gz",
+      "bytes": 5717059,
+      "sha256": "c069d52b6fcfde1ea266cd4e71ebfaea0682f5c74f7cf39423c3984d92850087"
+    },
+    {
+      "path": "data/response/recovered_worker_cache_2022_forward_audit.csv",
+      "bytes": 5173,
+      "sha256": "a2be2c57c6026fa258401a25e26717f9dc8d3c250b5e78efd453f38e603ad9a9"
+    },
+    {
+      "path": "data/response/recovered_worker_cache_2022_manifest.json",
+      "bytes": 4906,
+      "sha256": "80e5c0ecfa0db28a86e840a94b85b23584e6c332e922fb5da4a9bdc7db3ea403"
+    },
+    {
+      "path": "data/response/recovered_worker_cache_2022_queries.csv",
+      "bytes": 2464744,
+      "sha256": "925319e3c3199193a3005b1e2c3993e1482d9c373821a92780651aa1b3781dd0"
+    },
+    {
+      "path": "data/response/source_constraint_audit.json",
+      "bytes": 2293,
+      "sha256": "7f370b56788e96569202bf0ab263347856a5840272925f05a9210114e03b8b7f"
+    },
+    {
+      "path": "docs/data_provenance.md",
+      "bytes": 1985,
+      "sha256": "022a56401cd14a2d52a7406f9781f8d84e7f80c2ff232c1ec35c89545f1b59fb"
+    },
+    {
+      "path": "docs/figure_style.md",
+      "bytes": 7122,
+      "sha256": "d41843447dea83e70c95bda2002a453df56d9889283c5c1e34bc5275697144ec"
+    },
+    {
+      "path": "docs/hydrodynamic_lineage.md",
+      "bytes": 3049,
+      "sha256": "612473e90c885976188006feb93383702540c4f5355347491c91797ed6d25ee4"
+    },
+    {
+      "path": "docs/known_issues.md",
+      "bytes": 1976,
+      "sha256": "45b144daccfc0dadcbf2f69c0c21220192f08f0c9633954adea5c4cbb8d73b93"
+    },
+    {
+      "path": "docs/reproduction_scope.md",
+      "bytes": 2397,
+      "sha256": "f359d028fdc1c611b230a2155fe3367d2aae142e63f51113619272c9b51b6186"
+    },
+    {
+      "path": "manifests/asset_sources.json",
+      "bytes": 10911,
+      "sha256": "218764adb5b6d38fff51585a7b47bc01f068db65e259bdb9e87de8ad4894a610"
+    },
+    {
+      "path": "manifests/external_inputs.json",
+      "bytes": 2112,
+      "sha256": "6873f706850c1ae1735b3da286f7aef77adffa8b635a268f4952a8eb4b432a26"
+    },
+    {
+      "path": "manifests/full_window_replay_validation.json",
+      "bytes": 73262,
+      "sha256": "28ff60be9a03c14c6a2a0df471f5f3b1ff1dd7328b98bd0cbbc43a3064ce0d73"
+    },
+    {
+      "path": "manifests/manuscript_identity.json",
+      "bytes": 385,
+      "sha256": "9c66a0153f5efb09491086955375d22d8a0343b0ec46107444647b6df4baae29"
+    },
+    {
+      "path": "manifests/release_status.json",
+      "bytes": 1122,
+      "sha256": "5b936c4a5e6e36c99c5836267c63c2391ca2c7083f8ed021120d35d1d660ce3d"
+    },
+    {
+      "path": "manifests/reproduction_validation.json",
+      "bytes": 697,
+      "sha256": "b80f657cdc49ac62cf54d419eae32ba21cc27392ddc2cc3378ea502f3181ce72"
+    },
+    {
+      "path": "manifests/response_inventory.json",
+      "bytes": 2728,
+      "sha256": "59293c2e67284d28cb0a263ec5c7897bb7a4f1be3fa8da22112831d100d65e34"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 844,
+      "sha256": "3e9f73b1d846aaf3e6832b3eef48db2b07072b90f752a86ccd59f834bd9543a4"
+    },
+    {
+      "path": "provenance/process_identity/2019/input_identity.json",
+      "bytes": 60802,
+      "sha256": "8bbdacbf78300dda6c5ab2eb6409e8f4289561d2d8752bf0cb8fc9b50be7b67f"
+    },
+    {
+      "path": "provenance/process_identity/2020/input_identity.json",
+      "bytes": 60802,
+      "sha256": "44ff960f6fd1f171c7ac61f735a03374dac2b934f14d3e2ce39508ef1eecf99d"
+    },
+    {
+      "path": "provenance/process_identity/2021/input_identity.json",
+      "bytes": 60802,
+      "sha256": "7ae070bf1fe8a37b1b4db3097cf3215ab4ed89e71dc2530d42858f02fd8af89b"
+    },
+    {
+      "path": "provenance/process_identity/2022/input_identity.json",
+      "bytes": 60700,
+      "sha256": "ad606223a5c1482c5271768d82aeb056ab373bb303710dec32eed343992be52c"
+    },
+    {
+      "path": "provenance/process_identity/repair_protocol.json",
+      "bytes": 7503,
+      "sha256": "1702d11441390842db99e2c86d24d3a69b9fcff5441210467036b76008803eb0"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 557,
+      "sha256": "f538ad34005bcfb73e3b9d48f8a915ad3f56a542c2393f5937db2245d620b0b8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4987,
+      "sha256": "4667e189b2ace3fe4dd9abe0065a2106921241cdbca1887f0a5c7852e497624a"
+    },
+    {
+      "path": "requirements-verified.txt",
+      "bytes": 136,
+      "sha256": "0c164207883cf6acfb80f3c77d8ad11eb60e97af39e2bf81d952722963e94c23"
+    },
+    {
+      "path": "scripts/replay_lake.py",
+      "bytes": 905,
+      "sha256": "b91a5520ca141df683541e8802450bafe51c0a49a38be0ff98cba7694b7aa639"
+    },
+    {
+      "path": "scripts/reproduce_figures.py",
+      "bytes": 1552,
+      "sha256": "99640e15e815a67d169a1462ffc0085790cf4f832128d5827d8bf1be97de4140"
+    },
+    {
+      "path": "scripts/reproduce_metrics.py",
+      "bytes": 1171,
+      "sha256": "0b62070a59e5e921f6d3357468b33368ce884768d260e06073ad21c8dd1cfd84"
+    },
+    {
+      "path": "scripts/unpack_inputs.py",
+      "bytes": 1866,
+      "sha256": "2dfe53ad9c040198cffec004dd43bd79d7e90ebbe9cdfe2e9114670c6e5fba77"
+    },
+    {
+      "path": "scripts/validate_response.py",
+      "bytes": 2389,
+      "sha256": "e71c61235557f8afd1ad110ef17bb6449d7fdf24849e520d2a3d5fa4d185a502"
+    },
+    {
+      "path": "scripts/verify_assets.py",
+      "bytes": 1531,
+      "sha256": "5aa48cc829e10ccc99193a4cdbde95113f4d45cd2a8109f5dc60520cfd8874e6"
+    },
+    {
+      "path": "src/lake_mc/__init__.py",
+      "bytes": 88,
+      "sha256": "7c80b952fcb5b63498bea63884f9b1bfa278cee345e6db5fe0589f7ac7ad86f8"
+    },
+    {
+      "path": "src/lake_mc/ecology/__init__.py",
+      "bytes": 324,
+      "sha256": "61093a79b5de1963ec4c71504d2248a58180753b8aa62a2b496b6c7dd112f892"
+    },
+    {
+      "path": "src/lake_mc/ecology/config.py",
+      "bytes": 12155,
+      "sha256": "c1e1c597c2e1976f52a096c8b8eb5a1e7069a71dd0507661b97c6129df868939"
+    },
+    {
+      "path": "src/lake_mc/ecology/extraction_provenance.json",
+      "bytes": 3875,
+      "sha256": "f134ffc0b79293deb650f8e30f21ff095c6df52417230d239d2718e219844e51"
+    },
+    {
+      "path": "src/lake_mc/ecology/fixtures/driver.csv",
+      "bytes": 2220,
+      "sha256": "20c55303774eb33cd7551cc632d0180988ecbce4f89f98eeab2d46e08a3d2a2e"
+    },
+    {
+      "path": "src/lake_mc/ecology/fixtures/expected_state.csv",
+      "bytes": 2825,
+      "sha256": "b42a9ea6ba029eb3675a4a8ecb6366f8e2b69175ef7458680273a9ae8c8707cf"
+    },
+    {
+      "path": "src/lake_mc/ecology/fixtures/initial.json",
+      "bytes": 140,
+      "sha256": "378a20b1a2625d56ae843f6978d16fa859286dbb171dba472d928f7b0e375be5"
+    },
+    {
+      "path": "src/lake_mc/ecology/fixtures/lookup_queries.json",
+      "bytes": 13937,
+      "sha256": "ceaba58058e33b088732ca5da7b0effc7bc8fa99a974a91291e76f198c20b0ca"
+    },
+    {
+      "path": "src/lake_mc/ecology/fixtures/metadata.json",
+      "bytes": 714,
+      "sha256": "50ca185c12425ed97f776a31a4d99e7ab51783af180917b709522f383561006e"
+    },
+    {
+      "path": "src/lake_mc/ecology/frozen_parameters.json",
+      "bytes": 5732,
+      "sha256": "eee04f74faceedc270b66ac580275bde59498f042951418d4d775d36e83b2d8a"
+    },
+    {
+      "path": "src/lake_mc/ecology/production.py",
+      "bytes": 5871,
+      "sha256": "05c809f7276ee941b3b808dc5eb0e3fa6a3af99add0905052db5803ab266842f"
+    },
+    {
+      "path": "src/lake_mc/ecology/README.txt",
+      "bytes": 1821,
+      "sha256": "3bc12783cff6208a1b82c8d054691e44b23bb8752a1bb6f7affd1e967cdc9a58"
+    },
+    {
+      "path": "src/lake_mc/ecology/state.py",
+      "bytes": 73796,
+      "sha256": "0b887cd00474f81a7ade6ddb723629816d3964e8a340c56cdc63591f3eddd0a1"
+    },
+    {
+      "path": "src/lake_mc/ecology/test_fixture.py",
+      "bytes": 3002,
+      "sha256": "7eb974c4c2e9bea957fe35060e962f27d1974b1a3256a498e55c38f6839e97d1"
+    },
+    {
+      "path": "src/lake_mc/evaluation/__init__.py",
+      "bytes": 295,
+      "sha256": "e74466ea5647622722866db532cd1efaf726db70945e7291a202add0edbe7802"
+    },
+    {
+      "path": "src/lake_mc/evaluation/metrics.py",
+      "bytes": 3568,
+      "sha256": "aad367121bdc676b9f43035b9694b8ea6564827cc69993a2d3e584c32dfbcbba"
+    },
+    {
+      "path": "src/lake_mc/evaluation/reproduction.py",
+      "bytes": 21381,
+      "sha256": "169abd5dfc591c590a41a3a08f996fdd90461f94ce1c3ebe82fec47830675067"
+    },
+    {
+      "path": "src/lake_mc/response/__init__.py",
+      "bytes": 394,
+      "sha256": "0d6f8223c2a55a1251beb6937cc80086f01b45544a00237025094cb30b308c98"
+    },
+    {
+      "path": "src/lake_mc/response/cache.py",
+      "bytes": 4735,
+      "sha256": "b343a217ddd280c505e57bba28691a35be93b47ca45f739c27e5777f05a94bc2"
+    },
+    {
+      "path": "src/lake_mc/response/surface.py",
+      "bytes": 13318,
+      "sha256": "41c2b438158988c7534ca560f30f9fabedce0eb4e74dcebb3a07d11efdf0a5fc"
+    },
+    {
+      "path": "src/lake_mc/toxin_pools/__init__.py",
+      "bytes": 641,
+      "sha256": "70a2aab069420d60d845af0f4b779edc6400e844bc05e58c0bd53d11f4ad05f8"
+    },
+    {
+      "path": "src/lake_mc/toxin_pools/config.py",
+      "bytes": 1811,
+      "sha256": "0703d630b4f69ca5feb87a3532bbb80fb809697d34b0cca9ca3a7110ddcc56e7"
+    },
+    {
+      "path": "src/lake_mc/toxin_pools/inventory.py",
+      "bytes": 3356,
+      "sha256": "60bdd15fd2bc08debcdc2f60378223a40e3de4141801cb91822735258b8dc451"
+    },
+    {
+      "path": "src/lake_mc/toxin_pools/replay.py",
+      "bytes": 11658,
+      "sha256": "91071bab97a7a7f2f8eac9b6166dd2e61f5d30dc43035dd95d7a99d21eece67d"
+    },
+    {
+      "path": "src/lake_mc/toxin_pools/source.py",
+      "bytes": 7703,
+      "sha256": "a6192e53090fc97e94befd25ec5eb8980b1e93558f83314263526135085aeac0"
+    },
+    {
+      "path": "src/lake_mc/toxin_pools/transport.py",
+      "bytes": 4442,
+      "sha256": "1a26bb59a1a93104858c2cf7841b547d5f0d00f84e971187097f20beefde8d45"
+    },
+    {
+      "path": "tests/test_evaluation.py",
+      "bytes": 4769,
+      "sha256": "68117d9341398599049c66d980750d486f3d8bd76d879d1864712801f9e1bc52"
+    },
+    {
+      "path": "tests/test_response.py",
+      "bytes": 8110,
+      "sha256": "658ab08312d639b9a03445a9557aa7ff3d079fb6c9c8ddafa55df6b3e63e2093"
+    },
+    {
+      "path": "tests/test_toxin_pools.py",
+      "bytes": 4269,
+      "sha256": "63c6a451749e30325215d49fc0af3b8a2af63184620a5b71757802385be3e297"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+This package contains original project code and selected frozen research results.
+The underlying FACHB905 metabolic network and its reconstruction and LP-response
+generation workflow are not distributed here. The precomputed response tables
+are the input interface to the downstream lake model.
+
+Third-party observations and hydrodynamic data retain their original providers'
+rights and attribution requirements. FVCOM source code, third-party database
+exports, software dependencies, and personal download correspondence are not
+bundled. See docs/data_provenance.md for the included assets and their roles.
+
+An open-source license has not yet been selected by the authors. No additional
+license grant is implied by this notice or by public accessibility. Please
+contact the repository owner regarding reuse beyond applicable statutory rights.

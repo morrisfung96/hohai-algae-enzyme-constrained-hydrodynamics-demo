@@ -1,0 +1,5 @@
+﻿model,minimum,median,maximum,quantity
+Dynamic RevB,2.861909274553108,358.9200717350641,12915.17663387162,"RevB surface-expression MC-LR-equivalent process concentration, ug/L"
+Fixed capacity RevB,3.534760004068442,375.3270193916313,15589.350197297908,"RevB surface-expression MC-LR-equivalent process concentration, ug/L"
+Biomass source RevB,2.130612771460132,250.79730244746463,5826.341561008557,"RevB surface-expression MC-LR-equivalent process concentration, ug/L"
+Observed total MC,0.1,1.4,43.58,"surface ELISA particulate+dissolved total MC, ug/L"
