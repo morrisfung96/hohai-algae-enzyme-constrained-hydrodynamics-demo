@@ -1,0 +1,13 @@
+rho,support,positive_nodes,all_pairs,symmetric_relative_tolerance,near_output_pairs,near_pair_fraction,nodes_in_at_least_one_pair
+0.25,retained_lake_environment_nodes,1978,1955253,1e-09,14748,0.007542757893735491,1896
+0.25,retained_lake_environment_nodes,1978,1955253,0.05,1562437,0.7990970989432058,1976
+0.25,retained_lake_environment_nodes,1978,1955253,0.1,1571759,0.8038647683957012,1976
+0.5,retained_lake_environment_nodes,1978,1955253,1e-09,14749,0.007543269336500187,1898
+0.5,retained_lake_environment_nodes,1978,1955253,0.05,1562446,0.799101701928088,1976
+0.5,retained_lake_environment_nodes,1978,1955253,0.1,1571765,0.8038678370522894,1976
+0.8,retained_lake_environment_nodes,1978,1955253,1e-09,14749,0.007543269336500187,1898
+0.8,retained_lake_environment_nodes,1978,1955253,0.05,1562446,0.799101701928088,1976
+0.8,retained_lake_environment_nodes,1978,1955253,0.1,1571765,0.8038678370522894,1976
+0.9,retained_lake_environment_nodes,1978,1955253,1e-09,14749,0.007543269336500187,1898
+0.9,retained_lake_environment_nodes,1978,1955253,0.05,1562446,0.799101701928088,1976
+0.9,retained_lake_environment_nodes,1978,1955253,0.1,1571751,0.8038606768535836,1976

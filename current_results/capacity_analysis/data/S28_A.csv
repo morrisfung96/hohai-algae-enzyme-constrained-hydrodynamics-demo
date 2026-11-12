@@ -1,0 +1,5 @@
+rho,numerically_equal_pairs_dsym_le_1e_minus9,pairs_dsym_le_0p05,pairs_dsym_le_0p10,support,positive_environment_nodes,eligible_unordered_pairs,nodes_in_at_least_one_equal_pair,nodes_in_at_least_one_5pct_pair,nodes_in_at_least_one_10pct_pair,source_id,source_pointers
+0.25,14748,1562437,1571759,retained_lake_environment_nodes,1978,1955253,1896,1976,1976,response_summary,retained-reference-ca0d93e74c31f9f1
+0.5,14749,1562446,1571765,retained_lake_environment_nodes,1978,1955253,1898,1976,1976,response_summary,retained-reference-b3328908f58a2b5b
+0.8,14749,1562446,1571765,retained_lake_environment_nodes,1978,1955253,1898,1976,1976,response_summary,retained-reference-a673a064445337f2
+0.9,14749,1562446,1571751,retained_lake_environment_nodes,1978,1955253,1898,1976,1976,response_summary,retained-reference-add1b26ad6b69f97

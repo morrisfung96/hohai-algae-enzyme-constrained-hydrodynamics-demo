@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lake-erie-metabolic-response"
-version = "0.1.0"
+version = "0.1.2"
 description = "Precomputed metabolic responses and lake-scale ecological, microcystin, and observation analyses"
 readme = "README.md"
 requires-python = ">=3.11"

@@ -1,0 +1,49 @@
+dimension,stratum,condition_zh,model,model_zh,n,n_years,n_station_year,n_survey_dates,MAE_log_offset,bias_log_offset
+observed_chla,low,低Chl-a,Dynamic source,Dynamic surface expression,62,3,18,16,0.31134819021280075,0.15567271118236728
+observed_chla,low,低Chl-a,Fixed source,Fixed surface expression,62,3,18,16,0.31585727279128717,0.15847925474664792
+observed_chla,low,低Chl-a,Biomass proportional source,Biomass proportional surface expression,62,3,18,16,0.3199191347040399,0.17421852811521915
+observed_chla,low,低Chl-a,Model biomass,模型藻量回归,62,3,18,16,0.3282047451094297,0.21398224314717476
+observed_chla,high,高Chl-a,Dynamic source,Dynamic surface expression,62,3,19,16,0.38807446910695775,-0.1479599996493322
+observed_chla,high,高Chl-a,Fixed source,Fixed surface expression,62,3,19,16,0.40373679930706297,-0.16066195135494046
+observed_chla,high,高Chl-a,Biomass proportional source,Biomass proportional surface expression,62,3,19,16,0.3663659344310213,-0.12633446487078528
+observed_chla,high,高Chl-a,Model biomass,模型藻量回归,62,3,19,16,0.32843149863338283,-0.08180720443297332
+observed_change,rising,Chl-a上升,Dynamic source,Dynamic surface expression,61,3,24,13,0.3970114953920927,-0.09575162544308681
+observed_change,rising,Chl-a上升,Fixed source,Fixed surface expression,61,3,24,13,0.4075204226787236,-0.10513431700058232
+observed_change,rising,Chl-a上升,Biomass proportional source,Biomass proportional surface expression,61,3,24,13,0.388423200306541,-0.06665609191520942
+observed_change,rising,Chl-a上升,Model biomass,模型藻量回归,61,3,24,13,0.35417284188895537,-0.018435151678478992
+observed_change,falling,Chl-a下降,Dynamic source,Dynamic surface expression,39,3,24,12,0.32226851803684997,0.04029828992824308
+observed_change,falling,Chl-a下降,Fixed source,Fixed surface expression,39,3,24,12,0.3291787806737046,0.022387166123663326
+observed_change,falling,Chl-a下降,Biomass proportional source,Biomass proportional surface expression,39,3,24,12,0.3107477421971836,0.07022453202304477
+observed_change,falling,Chl-a下降,Model biomass,模型藻量回归,39,3,24,12,0.32818939965718147,0.1923871022184075
+temp_C,low,低温,Dynamic source,Dynamic surface expression,63,3,24,8,0.3210736024938189,-0.029439264531025345
+temp_C,low,低温,Fixed source,Fixed surface expression,63,3,24,8,0.32241714890853074,-0.03839271365220767
+temp_C,low,低温,Biomass proportional source,Biomass proportional surface expression,63,3,24,8,0.31714357002413024,0.0025887142020587276
+temp_C,low,低温,Model biomass,模型藻量回归,63,3,24,8,0.3294472395673716,0.07440752720802363
+temp_C,high,高温,Dynamic source,Dynamic surface expression,61,3,24,8,0.37928799870023683,0.038243635745947024
+temp_C,high,高温,Fixed source,Fixed surface expression,61,3,24,8,0.3984024932600043,0.037433012629097456
+temp_C,high,高温,Biomass proportional source,Biomass proportional surface expression,61,3,24,8,0.36999392417792765,0.04599545781024921
+temp_C,high,高温,Model biomass,模型藻量回归,61,3,24,8,0.3271519839231141,0.057494724363524576
+light_Wm2,low,低光照,Dynamic source,Dynamic surface expression,64,3,24,8,0.3507746944704554,0.150767059022087
+light_Wm2,low,低光照,Fixed source,Fixed surface expression,64,3,24,8,0.3589517456690742,0.1549226124830887
+light_Wm2,low,低光照,Biomass proportional source,Biomass proportional surface expression,64,3,24,8,0.35912611375193904,0.16210189103448866
+light_Wm2,low,低光照,Model biomass,模型藻量回归,64,3,24,8,0.34501420277329076,0.14652172892517001
+light_Wm2,high,高光照,Dynamic source,Dynamic surface expression,60,3,24,8,0.3485770738619313,-0.15284839437275657
+light_Wm2,high,高光照,Fixed source,Fixed surface expression,60,3,24,8,0.36069867912128256,-0.16750623981053023
+light_Wm2,high,高光照,Biomass proportional source,Biomass proportional surface expression,60,3,24,8,0.32609338343749494,-0.1234284850842062
+light_Wm2,high,高光照,Model biomass,模型藻量回归,60,3,24,8,0.31050896890939605,-0.019708970848839876
+DIN_mgN_L,low,低DIN,Dynamic source,Dynamic surface expression,64,3,24,8,0.33626316212291635,0.08301345652042165
+DIN_mgN_L,low,低DIN,Fixed source,Fixed surface expression,64,3,24,8,0.34217165338353217,0.07381330662358071
+DIN_mgN_L,low,低DIN,Biomass proportional source,Biomass proportional surface expression,64,3,24,8,0.3434262344728166,0.09893643342079715
+DIN_mgN_L,low,低DIN,Model biomass,模型藻量回归,64,3,24,8,0.36070880321393567,0.10810045797429571
+DIN_mgN_L,high,高DIN,Dynamic source,Dynamic surface expression,60,3,21,8,0.36405604169930633,-0.08057788503764689
+DIN_mgN_L,high,高DIN,Fixed source,Fixed surface expression,60,3,21,8,0.3785974442258608,-0.08098964689372172
+DIN_mgN_L,high,高DIN,Biomass proportional source,Biomass proportional surface expression,60,3,21,8,0.34283992133522545,-0.05605199696293527
+DIN_mgN_L,high,高DIN,Model biomass,模型藻量回归,60,3,21,8,0.29376806177270814,0.021273718165426062
+DIP_mgP_L,low,低DIP,Dynamic source,Dynamic surface expression,63,2,16,8,0.365075595083192,-0.1767887420919295
+DIP_mgP_L,low,低DIP,Fixed source,Fixed surface expression,63,2,16,8,0.3786785075790532,-0.20398088145431156
+DIP_mgP_L,low,低DIP,Biomass proportional source,Biomass proportional surface expression,63,2,16,8,0.3407518828090619,-0.11963554654091774
+DIP_mgP_L,low,低DIP,Model biomass,模型藻量回归,63,2,16,8,0.32262857450284715,0.028281381433332507
+DIP_mgP_L,high,高DIP,Dynamic source,Dynamic surface expression,61,3,24,8,0.3338433178292449,0.19042424371868413
+DIP_mgP_L,high,高DIP,Fixed source,Fixed surface expression,61,3,24,8,0.3402964998789731,0.2084503006870081
+DIP_mgP_L,high,高DIP,Biomass proportional source,Biomass proportional surface expression,61,3,24,8,0.3456115683508671,0.17222707136447077
+DIP_mgP_L,high,高DIP,Model biomass,模型藻量回归,61,3,24,8,0.3341942117766393,0.10513320278656622

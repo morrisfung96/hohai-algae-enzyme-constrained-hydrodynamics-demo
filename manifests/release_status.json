@@ -1,7 +1,7 @@
 {
-  "release_kind": "Frozen-state reproduction and ecological-kernel demonstration",
+  "release_kind": "Current archived results and methods with preserved legacy frozen-state replay",
   "planned_repository": "morrisfung96/hohai-algae-enzyme-constrained-hydrodynamics-demo",
-  "local_candidate_date": "2026-11-06",
+  "local_candidate_date": "2026-11-13",
   "archive_reproduction_verified": true,
   "tests_run": 20,
   "unexpected_failures": 0,
@@ -21,11 +21,23 @@
   "FACHB905_network_distributed": false,
   "historical_native_water_flux_recovery": "NOT_CLAIMED",
   "repository_url": "https://github.com/morrisfung96/hohai-algae-enzyme-constrained-hydrodynamics-demo",
-  "release_tag": "v0.1.1",
+  "release_tag": "v0.1.2",
   "numerical_baseline_release": "v0.1.0",
   "reader_name_update": {
     "numerical_code_config_data_changed": false,
     "new_model_run": false,
     "new_fit": false
+  },
+  "prior_release_tag": "v0.1.1",
+  "legacy_validation_scope": "Original 7,555-row response and frozen-state replay only; historical checks below do not certify full regeneration of the current 67,452-row lake configuration.",
+  "current_revision": {
+    "namespace": "current_results/",
+    "response_rows": 67452,
+    "MC_station_dates": 164,
+    "entrypoint": "scripts/verify_current_results.py",
+    "computation_scope": "Saved current prediction rescoring and precomputed-response lookup; no fitting or upstream metabolic solving",
+    "main_initialization": "Declared 30-cycle pools; zero of 12 runs met strict convergence",
+    "complete_current_ecological_recompute_claimed": false,
+    "original_metabolic_network_distributed": false
   }
 }

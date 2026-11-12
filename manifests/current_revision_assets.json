@@ -1,0 +1,21 @@
+{
+  "release_tag": "v0.1.2",
+  "assets": [
+    {
+      "file": "Supporting_Data_S1_current_results.zip",
+      "bytes": 7675331,
+      "sha256": "d69712fa3ef9eb09866f4542b3d6ee1ff2b0cee233be6e442d688402c4cbb335",
+      "url": "https://github.com/morrisfung96/hohai-algae-enzyme-constrained-hydrodynamics-demo/releases/download/v0.1.2/Supporting_Data_S1_current_results.zip",
+      "publication_status": "STAGED_NOT_PUBLISHED",
+      "scope": "Sanitized computed result tables and selected plotted source data; no raw network or upstream generator."
+    },
+    {
+      "file": "Supporting_Data_S2_capacity_analysis.zip",
+      "bytes": 22544,
+      "sha256": "094ec1898c04a805d61d3ab5343881191d4d88e7a0fb1fc34304c627a479c9e1",
+      "url": "https://github.com/morrisfung96/hohai-algae-enzyme-constrained-hydrodynamics-demo/releases/download/v0.1.2/Supporting_Data_S2_capacity_analysis.zip",
+      "publication_status": "STAGED_NOT_PUBLISHED",
+      "scope": "Sanitized computed result tables and selected plotted source data; no raw network or upstream generator."
+    }
+  ]
+}

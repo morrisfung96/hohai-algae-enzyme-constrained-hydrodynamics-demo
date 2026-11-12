@@ -1,3 +1,9 @@
+# Current English submission and archived replay
+
+The current revision is provided in `current_results/`: a 67,452-row precomputed response, saved current evaluation, capacity diagnostics, revised artwork and portable saved-result checks. Complete current equations, observation/regression definitions and the declared initialization scope are documented in `manuscript/current_methods.txt`. Start with `python scripts/verify_current_results.py`. Check the named partial helper with `python scripts/verify_capacity_query.py current_results/data/response/environment_response.csv.gz`. These checks use saved values and perform no model solve or fitting.
+
+The original 7,555-row response and frozen-state replay described below are retained as an archived computational scope. The current results are not a claim that this public repository regenerates the complete current ecology or original metabolic network. Underlying FACHB905 network files and upstream model/LP generators remain excluded.
+
 # Hohai algae enzyme-constrained hydrodynamics demo
 
 This repository accompanies **Linking Metabolic Capacity and Multiphase
@@ -113,3 +119,7 @@ Please cite the associated article and identify the release/commit used.
 The article DOI and author metadata will be linked when finalized; no DOI has
 been minted by preparing this directory. See `NOTICE` for reuse and third-party
 rights. No project-wide open-source license has yet been selected by the authors.
+
+## Current numerical interface environment
+
+The standalone current-interface witnesses were checked with Python 3.12, NumPy 2.2.6, pandas 2.3.3 and SciPy 1.14.1. Install `requirements-current-interface.txt` in a fresh environment, then run the current commands above; installing this repository as a package is not required for those scripts. `requirements-verified.txt` retains the separately verified archived replay environment.

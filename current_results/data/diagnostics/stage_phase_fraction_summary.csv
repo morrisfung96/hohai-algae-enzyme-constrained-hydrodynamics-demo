@@ -1,0 +1,11 @@
+﻿scope,basis,n,observed_median,model_median,MAE_fraction,bias_fraction,spearman,observation_basis,model_configuration
+all,water_column,164,0.13598364498150944,0.3768846754420635,0.2773912399554678,0.20599683223441986,-0.19123900523766757,0.75m surface particulate+dissolved MC,current saved four-year C5 state; unchanged surface factor
+all,surface_expression,164,0.13598364498150944,0.2338784325349916,0.19860683108597346,0.10214486838769876,-0.09513114830482704,0.75m surface particulate+dissolved MC,current saved four-year C5 state; unchanged surface factor
+2019,water_column,40,0.025871679673157674,0.4533370198201984,0.4336409441051362,0.4315379742083202,0.07804878048780489,0.75m surface particulate+dissolved MC,current saved four-year C5 state; unchanged surface factor
+2019,surface_expression,40,0.025871679673157674,0.3088839798614009,0.3122041422983174,0.3091475891215566,0.17729831144465294,0.75m surface particulate+dissolved MC,current saved four-year C5 state; unchanged surface factor
+2020,water_column,37,0.16379310344827588,0.4339317857379208,0.29740902953407083,0.25367738507234805,-0.2191131197485747,0.75m surface particulate+dissolved MC,current saved four-year C5 state; unchanged surface factor
+2020,surface_expression,37,0.16379310344827588,0.25875265417297655,0.21569967990362315,0.13848366180431146,-0.1555608296050487,0.75m surface particulate+dissolved MC,current saved four-year C5 state; unchanged surface factor
+2021,water_column,32,0.17509578544061305,0.3676359046903444,0.19102571993661044,0.1790573647776788,0.34677419354838707,0.75m surface particulate+dissolved MC,current saved four-year C5 state; unchanged surface factor
+2021,surface_expression,32,0.17509578544061305,0.23770280860631077,0.1038985701160775,0.07370266217800299,0.44574780058651026,0.75m surface particulate+dissolved MC,current saved four-year C5 state; unchanged surface factor
+2022,water_column,55,0.19745222929936304,0.2784887720267008,0.20053760832289313,0.02556477450089916,-0.10015152634484671,0.75m surface particulate+dissolved MC,current saved four-year C5 state; unchanged surface factor
+2022,surface_expression,55,0.19745222929936304,0.16376003240036774,0.159594767382153,-0.05630046955882342,0.020708564885425797,0.75m surface particulate+dissolved MC,current saved four-year C5 state; unchanged surface factor

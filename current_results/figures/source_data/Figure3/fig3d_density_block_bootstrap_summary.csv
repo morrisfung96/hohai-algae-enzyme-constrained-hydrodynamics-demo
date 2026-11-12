@@ -1,0 +1,3 @@
+variant,component,component_order,evaluation_role,n,n_station_year_blocks,mean_error_reduction,median_error_reduction,q025_block_bootstrap,q975_block_bootstrap,probability_full_favorable,favorable_row_fraction
+no_density_feedback,Density feedback,3,development,141,24,1.3492988952865528,0.9771812070088854,1.1957921543884014,1.4842387590555544,1.0,0.8297872340425532
+no_density_feedback,Density feedback,3,independent_validation,40,8,1.422472661106148,1.0919381274678912,1.1608288219256406,1.6923045742342109,1.0,0.725

@@ -1,0 +1,7 @@
+support_subset,symmetric_relative_tolerance,positive_nodes,eligible_pairs,near_output_pairs,nodes_in_at_least_one_pair
+retained_lake_support,1e-09,1978,1955253,14749,1898
+retained_lake_support,0.05,1978,1955253,1562446,1976
+retained_lake_support,0.1,1978,1955253,1571751,1976
+added_lowlight_support_only,1e-09,952,452676,45932,744
+added_lowlight_support_only,0.05,952,452676,77854,952
+added_lowlight_support_only,0.1,952,452676,78584,952

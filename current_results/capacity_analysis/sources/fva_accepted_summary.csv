@@ -1,0 +1,5 @@
+﻿fva_group,state,tested_coordinates,accepted_both_endpoints,accepted_nontrivial_ranges,protein_pool_minimum,protein_pool_maximum,protein_pool_minimum_fraction_of_0p5,protein_pool_maximum_fraction_of_0p5,accepted_nonexchange_coordinates,accepted_nonexchange_nontrivial_ranges
+EXACT_FIXED_PRODUCT,Low DIN,17,15,15,0.37892335513284825,0.5,0.7578467102656965,1.0,15,15
+EXACT_FIXED_PRODUCT,Typical daylight,17,0,0,,,,,0,0
+NEAROPTIMAL_PRODUCT_0p99999999,Low DIN,20,20,18,0.37892335484620954,0.5,0.7578467096924191,1.0,17,17
+NEAROPTIMAL_PRODUCT_0p99999999,Typical daylight,20,9,1,0.49999999950000057,0.5,0.9999999990000011,1.0,6,0

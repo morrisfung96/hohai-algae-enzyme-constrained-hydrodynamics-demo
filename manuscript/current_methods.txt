@@ -1,0 +1,107 @@
+Lake ecological capacity interface and observation definitions
+
+Current precomputed response and saved-result release v0.1.2
+
+This specification documents the mathematical capacity interface and ecological closures. The supplied helper is partial numerical infrastructure, not a release of the upstream metabolic model or complete lake controller.
+
+Units: time h; temperature degrees C; irradiance W m^-2; nitrogen mg N L^-1; phosphorus mg P L^-1; concentrations ug L^-1 unless stated otherwise.
+
+The support set contains 3066 environmental nodes and 67452 conditional-capacity records. Each node is evaluated at 22 growth commitments: 0, 0.05–0.95 in increments of 0.05, 0.99, and 1. Temperature, irradiance, DIN, and the dissolved-phosphorus proxy span 23.45–26.55 °C, 0–947.35 W m−2, 0.00508–0.88178 mg N L−1, and 0.00194–0.00962 mg P L−1, respectively. The representative low-nitrogen state lies within these ranges. The query below uses environmental coordinates and growth commitment together; it does not interpolate along a separate growth-commitment curve.
+
+For a query $\mathbf{x}=(T,L,N,P,\rho)$ and support record $\mathbf{x}_j$, distances are standardized using the population standard deviation of each coordinate across the response records. The resulting scales, in the same coordinate order, are 0.72232698 °C, 292.81955 W m−2, 0.21964127 mg N L−1, 0.001401927 mg P L−1, and 0.31291782. A zero standard deviation would be replaced by 1, and the growth-commitment scale has a lower bound of 0.10.
+
+d_j=\sqrt{\sum_{k=1}^{5}\left(\frac{x_k-x_{jk}}{s_k}\right)^2},\qquad w_j=\frac{(d_j+10^{-9})^{-1}}{\sum_{i\in\mathrm{N}}(d_i+10^{-9})^{-1}},\qquad \widehat{y}(\mathbf{x})=\sum_{j\in\mathrm{N}}w_jy_j.
+
+The neighborhood $\mathrm{N}$ initially contains the four nearest records in this five-dimensional distance. If any selected record has $L_j>10^{-9}$ W m−2, records at or below that threshold are excluded and the remaining weights renormalized. For $L\leq10^{-9}$ W m−2, maximum growth, committed growth, and conditional MC-LR capacity are all set to zero. Negative irradiance and nutrient inputs are replaced by zero before querying, and $\rho$ is clipped to [0,1]. Other query coordinates are not clamped to the support extrema: outside support, the same nearest-record rule is used. Exact, unrounded input tuples identify formal-query cache entries. Maximum growth, committed growth, and MC-LR capacity are averaged separately with the same weights; a weighted capacity is not a new network solution at the query environment.
+
+Temperature activity is represented by a Gaussian factor normalized to its value at the reference temperature. Both the reference and optimum are 26 °C and the width is 7.5 °C:
+
+g_T(T)=\exp\left[-\frac12\left(\frac{T-26}{7.5}\right)^2\right].
+
+This factor modifies the enzyme-resource costs and the documented local catalytic-capacity limits during response generation. It is an empirical temperature representation rather than enzyme-specific measured kinetics. Nutrient-input limits and final lake concentrations are not multiplied by the factor again. The Gaussian function is also used explicitly in the empirical ecological comparator below.
+
+Total living biomass is represented by Microcystis and other-algal states, $B_M$ and $B_O$. The saturation and sigmoid functions used below are $S(x;K)=\max(x,0)/(\max(x,0)+K)$ and $\sigma(x;c,w)=1/[1+\exp(-(x-c)/w)]$, respectively; $[x]_+=\max(x,0)$, and $\operatorname{clip}(x;l,u)=\min(u,\max(l,x))$. The fixed density scale is $K_0=0.30$ ecological-state units, equivalent to 4.5900141 gDW m−3 under the dry-weight conversion in Section S2.10. All time constants are expressed in hours.
+
+Let $\ell$ denote low-light history, $g$ growth-allocation history, $a$ activity, $r$ release pressure, $m$ maturity, and $p_M=B_M/\max(B_M+B_O,\varepsilon)$ the Microcystis fraction. Their numerical updates use $x^{n+1}=\operatorname{clip}(x^n+\Delta t(x_{\mathrm{tar}}-x^n)/\tau;l,u)$ with a 1 h time step. For notation, the updated target states below are evaluated sequentially in the order specified at the end of Section S2.10.
+
+f_N=\frac{N}{N+0.35},\quad f_P=\frac{P}{P+0.030},\quad f_I=\frac{L}{L+80},\quad f_T=\exp\left[-\frac12\left(\frac{T-26}{7.5}\right)^2\right],\quad \ell_{\mathrm{tar}}=1-f_I.
+
+Here $N$, $P$, and $L$ have units mg N L−1, mg P L−1, and W m−2, respectively. Low-light history has a 48 h time constant. Maturity is computed from the beginning-of-step biomass using the fixed reference scale:
+
+d_0=\frac{B_M+B_{M,\mathrm{inactive}}+0.8(B_O+B_{O,\mathrm{inactive}})}{K_0},
+
+m=\operatorname{clip}\left(0.60\sigma(d_0;0.45,0.18)+0.25\sigma(p_M;0.55,0.15)+0.15\sigma(B_M/K_0;0.55,0.20);0,1\right),
+
+g_{\mathrm{tar}}=\operatorname{clip}\left(0.35[1-\min(f_N,f_P)]+0.35m+0.15(1-p_M)+0.15\ell;0,1\right),\qquad \rho=0.80-0.55g.
+
+The allocation history $g$ relaxes over 96 h and is bounded by [0,1], giving $0.25\leq\rho\leq0.80$. Its initial value is 0.20, so the initial state before the first update corresponds to $\rho=0.69$. Environmental queries return maximum growth $\mu_M^*$, committed growth $\mu_{\mathrm{com}}$, and conditional capacity $q_{\mathrm{cond}}$. The current ecology uses $\mu_M^*$ for candidate production and $\mu_{\mathrm{com}}/\mu_M^*$ in allocation suitability; it does not require realized group production to equal $\mu_{\mathrm{com}}B_M$.
+
+k_{\mathrm{tar}}=\operatorname{clip}\left(\frac{\mu_M^*}{0.029147432795074};0,1\right),\qquad K_{\mathrm{eff}}=K_0(0.5+0.5k).
+
+The capacity-memory state $k$ starts at 1. At $L\geq20$ W m−2 it relaxes toward $k_{\mathrm{tar}}$ with a 72 h time constant and is clipped to [0,1]; below this irradiance it is held unchanged. Darkness therefore does not itself reduce the density scale. The group density factors are
+
+D_M=\left[1-\frac{B_M+\chi B_{M,\mathrm{inactive}}+\alpha_{OM}(B_O+\chi B_{O,\mathrm{inactive}})}{K_{\mathrm{eff}}}\right]_+,\qquad D_O=\left[1-\frac{B_O+\chi B_{O,\mathrm{inactive}}+\alpha_{MO}(B_M+\chi B_{M,\mathrm{inactive}})}{K_{\mathrm{eff}}}\right]_+,
+
+with $\chi=1$, $\alpha_{OM}=0.80$, and $\alpha_{MO}=0.70$. Define $F(U,R,D)=\min(U,R)+D[U-\min(U,R)]_+$. Candidate Microcystis and other-algal production rates are $U_M=\mu_M^*B_M$ and $U_O=\mu_{O,\max}\Phi_{\mathrm{prod}}B_O$. The conserved community production budget is $G=F(U_M,k_MB_M,D_M)+F(U_O,k_OB_O,D_O)$, where $\mu_{O,\max}=0.014$ h−1, $k_M=0.00015$ h−1, $k_O=0.00035$ h−1, and $\Phi_{\mathrm{prod}}=f_Tf_I\min(f_N,f_P)$. Replacement production up to baseline loss is retained before density regulation is applied to the surplus.
+
+The target Microcystis share is $w_M=B_M\Phi_M/(B_M\Phi_M+B_O\Phi_O)$, with $\Phi_M=a\operatorname{clip}(\mu_{\mathrm{com}}/\max(\mu_M^*,\varepsilon);0,1)$ and $\Phi_O=\min(f_T,f_I,f_N,f_P)$. A zero suitability denominator gives $w_M=p_M$. The allocation uses beginning-of-step activity; activity is updated subsequently for the exported source state. The group capacities are $C_M=F(U_M,k_MB_M,D_M)$ and $C_O=F(\mu_{O,\max}\Psi_OB_O,k_OB_O,D_O)$, where $\Psi_O=[f_T\min(f_I,f_N,f_P)]^{0.75}$. Thus allocation suitability, candidate production, and other-algal capacity use distinct environmental expressions. The exponent 0.75 is an empirical closure parameter. The constrained allocation is $P_M=\operatorname{clip}(w_MG;\max(0,G-C_O),\min(C_M,G))$ and $P_O=G-P_M$. It preserves total production while respecting the two ecological capacity bounds.
+
+Excess exit is computed from the living stock above the updated density scale. Define $h_K=K_{\mathrm{eff}}/K_0$, $E=\min\{[(1-h_K)/72][B_M+B_O-K_{\mathrm{eff}}]_+,(B_M+B_O)/\Delta t\}$, $E_M=p_ME$, and $E_O=(1-p_M)E$. The total living-biomass tendency, before spatial exchange, is $P_M+P_O-k_MB_M-k_OB_O-E$. Intergroup turnover has opposite signs in the two living pools and cancels in their sum. Inactivation transfers living stock to inactive stock; subsequent lysis and settling remove it from the combined living-plus-inactive inventory. Nonnegative clipping is recorded separately as a numerical correction. Disabling density regulation sets $D_M=D_O=1$ and removes density pressure, which also changes later activity and history states; this combined switch is not a single-process test of shading, grazing, or nutrient depletion.
+
+All bounded lag states use the explicit first-order update defined in Section S2.9. After querying capacity and updating $K_{\mathrm{eff}}$, density pressure for release is $d_K=[B_M+B_{M,\mathrm{inactive}}+0.8(B_O+B_{O,\mathrm{inactive}})]/K_{\mathrm{eff}}$. Release pressure has target $r_{\mathrm{tar}}=\operatorname{clip}(0.45\sigma(d_K;0.85,0.20)+0.35[1-\min(f_N,f_P)]+0.20\ell;0,1)$ and a 96 h time constant. The activity target is $a_{\mathrm{tar}}=\operatorname{clip}\{\operatorname{clip}(\mu_{\mathrm{com}}/0.020;0.02,1)(1-0.45r)(1-0.25\ell);0.02,1\}$, also with a 96 h time constant; $\mu_{\mathrm{com}}$ and the 0.020 reference both have units h−1. Release pressure is initialized to zero, and low-light history to zero. Activity defaults to 0.80, with any recorded initial-profile values taking precedence.
+
+Maturity $m$ is defined in Section S2.9. Patch history $b$ starts at zero and relaxes over 96 h toward $b_{\mathrm{tar}}=\operatorname{clip}[0.55\sigma(B_M;0.018,0.008)+0.30\sigma(p_M;0.12,0.06)+0.15m;0,1]$. The effective toxigenic fraction is defined by
+
+f_{\mathrm{prior}}=\operatorname{clip}(0.06+0.015m+0.03rm+0.02b;0.02,0.12),
+
+f_{\mathrm{eff}}=\operatorname{clip}[f_{\mathrm{prior}}(0.75+0.40m)(0.85+0.35rm);0.02,0.16].
+
+These quantities are model closure states. The diagnostic gene-ratio history has no multiplicative effect on $f_{\mathrm{eff}}$ in the current source configuration.
+
+The hourly sequence is: read the beginning-of-step living and inactive stocks and lag states; update low-light history; compute reference-scale density pressure and maturity; update patch and allocation histories; obtain $\rho$ and query metabolic capacity; update the daylight capacity memory and $K_{\mathrm{eff}}$; calculate density-regulated community production and its conservative group allocation; update release pressure and activity; calculate the effective toxigenic fraction and source-biomass quantities; then advance living and inactive stocks and apply the offline spatial-exchange step. Thus maturity uses the fixed reference density scale, whereas production and release pressure use the updated effective density scale. Initial living biomass is supplied by the fixed survey-informed initialization; inactive pools start at zero. All historical states are clipped to their stated bounds, and division uses the positive numerical safeguard $\varepsilon=10^{-30}$ in the corresponding model units. These equations were not fitted to the total-MC observations used for the reported evaluation.
+
+The model is specified by the environmental query in Section S2.4, state targets and update order in Sections S2.9–S2.10, conservative allocation in Sections S9.1–S9.2, the surface observation operator in Section S13, and source, release, and receiving-volume equations in Sections S4–S5. The public mathematical specification and parameter table use these scientific names. Configuration manifests link the equations and saved results to their execution records; internal script names and branch identifiers are not required to interpret the formulation. The distributed response table and saved-output checks do not include the original metabolic network or enable a full upstream network regeneration.
+
+The empirical-capacity comparator replaces only the Microcystis capacity query. Its maximum and committed growth capacities are
+
+\mu_{M,\mathrm{emp}}^*=\lambda\mu_{\mathrm{ref}}f_Tf_I\min(f_N,f_P),\qquad \mu_{\mathrm{com,emp}}=\rho\mu_{M,\mathrm{emp}}^*,
+
+where $\mu_{\mathrm{ref}}=0.029147432795074$ h−1, $\lambda=12.233206914782599$, $T_{\mathrm{opt}}=26$ °C, Gaussian width=7.5 °C, light half-saturation=80 W m−2, and nutrient half-saturations=0.35 mg N L−1 and 0.030 mg P L−1. The same ecological update and observation expression are retained. At irradiance at or below $10^{-9}$ W m−2, both growth capacities are zero. This comparator does not calculate metabolic MC-LR capacity and is used for the biomass comparison, not as one of the three toxin-input formulations.
+
+\lambda=\exp\left[\operatorname{median}_{j\in\mathrm{J}_+}\ln\left(\frac{\mu_{M,j}^*}{\mu_{\mathrm{ref}}f_{T,j}f_{I,j}\min(f_{N,j},f_{P,j})}\right)\right].
+
+The scale was selected without biomass or MC observations from 7065 positive common records of the previously archived 7555-record response table. It remained fixed in the current comparison and was not re-estimated from the 67452-record response or the four-year evaluation. This common capacity-scale reference does not make the empirical formulation independent of all metabolic information.
+
+The replenishment term $J_{\mathrm{load}}$ is a nonnegative numerical input that relaxes intracellular inventory toward a specified standing-stock target. It is not removed from particulate or dissolved stocks and is not a measured external load. All concentrations and rates in the following equations use the ecological source control-volume basis, with intracellular concentration $c_{I,R}$. Let $B_+=B_{\mathrm{live}}+B_{\mathrm{inactive}}$ denote living plus inactive toxigenic dry biomass in gDW m−3; it differs from the activity-weighted living biomass used for biosynthetic input.
+
+Let $a$ be activity, $r$ release pressure, and $m_R=\operatorname{clip}(0.85+0.35rm;0,1)$ the clipped release-maturity factor. These variables are bounded by [0,1]; if the release-maturity factor is unavailable, the clipped stage factor $\operatorname{clip}(0.75+0.40m;0,1)$ is used. In the following retained equations, the symbol $p$ denotes $r$ and the symbol $m$ denotes $m_R$. The activity-decline signal and release gate are defined as follows:
+
+The relaxation time is $\tau=72$ h and the common source multiplier is $s=1$. Both synthesis and replenishment have units mmol m−3 h−1, and the conditional unit capacity $q_{\mathrm{unit}}$ has units mmol gDW−1 h−1. For the dynamic scheme, a positive finite realized unit capacity is used when present; otherwise the nonnegative conditional upper capacity is used. Here the utilization multiplier is 1, so the two coincide when the response is positive. The fixed-capacity and biomass-proportional formulations use their respective frozen development-period constants. Replacing $q_{\mathrm{unit}}$ changes both synthesis and the replenishment ceiling; the controlled comparison therefore changes the source formulation rather than synthesis alone.
+
+The source-control-volume update evaluates synthesis and replenishment first, computes loss-associated, intracellular-turnover and event release, limits release to the available intracellular inventory plus current input, and then partitions release between dead particulate and dissolved pools. Particulate conversion and dissolved degradation are evaluated explicitly from their beginning-of-step pools. The preceding equations define the update and retained parameter values; the dry-weight fallback converts a missing direct loss flux using the same biomass conversion as the source state. Section S7.4 reports the saved-results comparison associated with this unit correction.
+
+The synthesis ceiling $J_{\mathrm{ceil}}$ is the conditional realized capacity multiplied by living effective toxigenic dry biomass, before multiplying by activity. If no explicit ceiling is retained, $J_{\mathrm{ceil}}=q_{\mathrm{dyn}}\max(B_{\mathrm{live}},\varepsilon)$ is used. The result is clipped to nonnegative values. A positive ceiling caps candidate synthesis; when the ceiling is nonpositive, the retained rule uses the nonnegative candidate synthesis. Whether this exceptional branch is entered is assessed from the corresponding current saved states, rather than inferred from an earlier response-table audit. The fixed-capacity and biomass-proportional rules are, respectively:
+
+The state-to-dry-weight conversion is ζ=15.300047 gDW m⁻³ per state unit, with Btox=ζ BM feff and Btox,active=Btoxa. The gene-related history is a diagnostic proxy: its source multiplier equals one and it does not modify feff. The equations, initial states and update order below fully define the ecological closures; retaining gene-proxy output does not imply that gene observations calibrated the source.
+
+Let H denote measured Chl-a in µg L⁻¹. The fixed chlorophyll-to-dry-weight proxy and the prediction-side observation expression are:
+
+Both biomass quantities are in gDW m⁻³. The proxy assumes 10 mg Chl-a gDW⁻¹ (dry-weight:chlorophyll mass ratio 100); it is an assumed conversion, not a direct dry-weight measurement. The original external citation for this conversion is not established in the retained records. The normalized station weights sum to one; nd is the number of retained hourly states on the prescribed UTC day. The coefficient sB acts after ecological integration and never scales toxin sources. The 181-record evaluation includes 29 initialization-survey records: 8, 5, 8 and 8 in 2019–2022. Its reported errors therefore combine survey-informed initial conditions and subsequent dates.
+
+For the 141 records from 2020–2022, log10 MAE without an offset is 0.246468 for the metabolic-capacity scheme and 0.251979 for the empirical-capacity control. For the 40 records from 2019, the corresponding values are 0.253101 and 0.253585. The surface-representation assessment on 64 records from 2022 does not alter this core ecological evaluation; it separately tests the representation of surface sampling from water-column states. Matched prediction rows and input/weight manifests are supplied with Supporting Data S1; Text S13 defines the surface-operator switch.
+
+In the main lake configuration, each year–formulation run starts from zero toxin pools and repeats the first 72 h of source forcing for 30 cycles at a 1 h step. The per-grid relative-change tolerance is 10-6. None of the 12 runs met this criterion: the converged fraction was zero and the final-cycle maximum changes ranged from 0.0208751 to 0.0210043. Declared cycle-30 states were retained, converted from source concentrations to recipient inventories using control volumes, and used without additional mobile-transport spin-up. These are numerical initial conditions, not equilibrium or measured inventories. The main stage comparison is conditional on them. Zero, doubled and extended-spin-up tests in Text S7.1 belong to the separate supplementary water-column configuration and do not establish initialization robustness of the main lake result.
+
+Using same-day measured Chl-a as the input, log-linear regression with leave-one-year-out evaluation across the three years yielded an MAE of 0.244, with 71.8% of samples predicted within a factor of two. This diagnostic uses contemporaneous measurements and 124 samples from three years, demonstrating the monitoring value of biomass. It is reported separately from the four-year, 164-sample evaluation in Table S9, which uses modeled biomass or process concentrations. The observed association and conditional dispersion provide field context for biomass–toxin divergence in the main text; specific process interpretations are developed from the staged model results. For this diagnostic, x=log10[H/(1 µg L-1)] and y=log10[(CMC+0.01 µg L-1)/(1 µg L-1)]. Each of the three leave-one-year-out folds fits y=a+b(x-xtrain) by OLS on the other two years and predicts CMC=max(10a+b(x-xtrain)-0.01,0) µg L⁻¹, without a smearing correction. The pooled error is the mean absolute difference between observed and predicted y, 0.244396, on the same 124 surface records. This measured-Chl-a diagnostic is distinct from the four-year modeled-input evaluation.
+
+Observation equations: B_obs=H/10 gDW m^-3; B_prediction=1.45*15.300047*mean_day(sum_j w_sj B_surface,jt). H is Chl-a in ug L^-1. The conversion assumes10 mg Chl-a/gDW. The coefficient1.45 is selected from existing candidates on141 development records and frozen for2019, not a joint optimum. Twenty-nine initialization-survey rows enter the181-record evaluation.
+
+Biomass MAE uses log10 without an offset; toxin MAE uses log10(C+0.01). Same-day observed-Chl-a regression uses log10(H), centered on the training mean, to predict log10(C_MC+0.01) with OLS and no smearing. Its three-year124-record MAE is0.2443963796264601; it is distinct from four-year164-record model evaluation.
+
+Main inventories: first72h forcing repeated30times,1hstep,relative tolerance1e-6. None of12 year/formulation runs converged strictly; last-cycle maximum changes0.0208751–0.0210043. Declared cycle30 states are numerical initial conditions. Supplementary initialization tests are not validation of main initialization robustness.
+
+External calibration metadata: high-/low-light day4/day8 are descriptive input groups. Absolute proteomic irradiances/accession and independence of legacy growth target0.027292 h^-1 were not established; no independent benchmark is claimed.
+
+Archived currents drive an offline exchange approximation; no recovery of historical native FVCOM flux is claimed.
+
+Data scope: use Supporting_Data_S1_current_results.zip and Supporting_Data_S2_capacity_analysis.zip for the current saved results. The archived7555-row replay remains a separate legacy scope. No network solving is necessary or distributed.
